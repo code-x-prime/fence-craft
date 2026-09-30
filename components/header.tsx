@@ -89,6 +89,7 @@ export function Header() {
   const isActive = (href: string) => (href === '/' ? pathname === '/' : pathname.startsWith(href))
 
   return (
+    <>
     <header
       ref={ref}
       style={{ height: 76 }}
@@ -144,35 +145,37 @@ export function Header() {
         className="pointer-events-none absolute -bottom-px left-0 h-[2px] w-full origin-left scale-x-0 bg-teal"
       />
 
-      <div
-        id="mobile-menu"
-        ref={menu}
-        inert={!open}
-        className="invisible fixed inset-0 z-[55] flex flex-col bg-deep px-4 pb-6 pt-24 text-white opacity-0 sm:px-6 lg:hidden"
-      >
-        <nav aria-label="Mobile" className="flex flex-1 flex-col">
-          {nav.map((item, i) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              onClick={() => setOpen(false)}
-              aria-current={isActive(item.href) ? 'page' : undefined}
-              data-m
-              className={`flex items-baseline gap-4 border-b border-white/15 py-4 text-3xl font-extrabold uppercase tracking-tight ${
-                isActive(item.href) ? 'text-teal-soft' : ''
-              }`}
-            >
-              <span className="text-xs font-bold tracking-[0.18em] text-teal-soft">0{i + 1}</span>
-              {item.label}
-            </Link>
-          ))}
-        </nav>
-        <div data-m>
-          <BrandButton href="/contact" className="w-full">
-            Get a Quote
-          </BrandButton>
-        </div>
-      </div>
     </header>
+
+    <div
+      id="mobile-menu"
+      ref={menu}
+      inert={!open}
+      className="invisible fixed inset-0 z-[45] flex flex-col bg-deep px-4 pb-6 pt-24 text-white opacity-0 sm:px-6 lg:hidden"
+    >
+      <nav aria-label="Mobile" className="flex flex-1 flex-col">
+        {nav.map((item, i) => (
+          <Link
+            key={item.href}
+            href={item.href}
+            onClick={() => setOpen(false)}
+            aria-current={isActive(item.href) ? 'page' : undefined}
+            data-m
+            className={`flex items-baseline gap-4 border-b border-white/15 py-4 text-3xl font-extrabold uppercase tracking-tight ${
+              isActive(item.href) ? 'text-teal-soft' : ''
+            }`}
+          >
+            <span className="text-xs font-bold tracking-[0.18em] text-teal-soft">0{i + 1}</span>
+            {item.label}
+          </Link>
+        ))}
+      </nav>
+      <div data-m>
+        <BrandButton href="/contact" className="w-full">
+          Get a Quote
+        </BrandButton>
+      </div>
+    </div>
+    </>
   )
 }
