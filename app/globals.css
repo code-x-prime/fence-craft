@@ -1,0 +1,374 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme inline {
+  --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+
+  /* Brand — sampled from the FENCECRAFT logo */
+  --color-slate: #344c59;
+  --color-teal: #009e87;
+  --color-teal-soft: #7fd3c6;
+  --color-deep: #16232b;
+  --color-deeper: #0f1a20;
+  --color-ink: #12191d;
+  --color-paper: #f5f5f2;
+  --color-paper-2: #ebebe6;
+  --color-line: #d5d7d1;
+  --color-muted: #667077;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  overflow-x: clip;
+}
+[id] {
+  scroll-margin-top: 72px;
+}
+::selection {
+  background: var(--color-teal);
+  color: #fff;
+}
+:focus-visible {
+  outline: 2px solid var(--color-teal);
+  outline-offset: 3px;
+}
+
+/* ---------- layout helpers ---------- */
+.wrap {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 1320px;
+  padding-inline: 16px;
+}
+@media (min-width: 640px) {
+  .wrap {
+    padding-inline: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  .wrap {
+    padding-inline: 32px;
+  }
+}
+@media (min-width: 1280px) {
+  .wrap {
+    padding-inline: 40px;
+  }
+}
+
+/* ---------- section spacing tokens ---------- */
+.section-y {
+  padding-block: 3.5rem;
+}
+.section-sm {
+  padding-block: 3rem;
+}
+.section-lg {
+  padding-block: 4rem;
+}
+@media (min-width: 640px) {
+  .section-y {
+    padding-block: 4.5rem;
+  }
+  .section-sm {
+    padding-block: 4rem;
+  }
+  .section-lg {
+    padding-block: 5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .section-y {
+    padding-block: 6rem;
+  }
+  .section-sm {
+    padding-block: 5rem;
+  }
+  .section-lg {
+    padding-block: 7rem;
+  }
+}
+
+/* ---------- type scale tokens (max: H1 72px, H2 60px, H3 40px) ---------- */
+.h-page {
+  font-size: clamp(2.25rem, 1.2rem + 4.4vw, 4.5rem);
+}
+.h-page-md {
+  font-size: clamp(1.875rem, 0.9rem + 3.6vw, 3.75rem);
+}
+.h-section {
+  font-size: clamp(1.875rem, 1rem + 3.4vw, 3.75rem);
+}
+.h-section-md {
+  font-size: clamp(1.75rem, 0.9rem + 2.9vw, 3rem);
+}
+.h-statement {
+  font-size: clamp(2.25rem, 1rem + 5.4vw, 5.5rem);
+}
+.h-sub {
+  font-size: clamp(1.5rem, 1rem + 1.8vw, 2.5rem);
+}
+.h-num {
+  font-size: clamp(2.5rem, 1.6rem + 3vw, 4.5rem);
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+.eyebrow::before {
+  content: "";
+  width: 28px;
+  height: 1px;
+  background: currentColor;
+}
+
+.display {
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 0.95;
+  text-transform: uppercase;
+  text-wrap: balance;
+}
+
+/* ---------- buttons (square, industrial) ---------- */
+.btn {
+  display: inline-flex;
+  min-height: 52px;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  padding: 0 24px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+.btn svg {
+  transition: transform 0.25s ease;
+}
+.btn:hover svg {
+  transform: translate(2px, -2px);
+}
+.btn-teal {
+  background: var(--color-teal);
+  color: #fff;
+}
+.btn-teal:hover {
+  background: var(--color-slate);
+}
+.btn-dark {
+  background: var(--color-slate);
+  color: #fff;
+}
+.btn-dark:hover {
+  background: var(--color-teal);
+}
+.btn-line {
+  border-color: rgba(18, 25, 29, 0.35);
+  color: var(--color-ink);
+}
+.btn-line:hover {
+  background: var(--color-ink);
+  color: #fff;
+}
+.btn-line-light {
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #fff;
+}
+.btn-line-light:hover {
+  background: #fff;
+  color: var(--color-deep);
+}
+
+/* Drifting mesh background */
+.mesh-bg {
+  background-image:
+    linear-gradient(45deg, transparent 49%, currentColor 49.5%, currentColor 50.5%, transparent 51%),
+    linear-gradient(-45deg, transparent 49%, currentColor 49.5%, currentColor 50.5%, transparent 51%);
+  background-size: 56px 56px;
+  animation: mesh-drift 40s linear infinite;
+}
+@keyframes mesh-drift {
+  to {
+    background-position: 112px 0, 112px 0;
+  }
+}
+.grid-bg {
+  background-image:
+    linear-gradient(to right, currentColor 1px, transparent 1px),
+    linear-gradient(to bottom, currentColor 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+/* form fields */
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+}
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  min-width: 0;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 14px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+.field select option {
+  color: #12191d;
+}
+.field input::placeholder,
+.field textarea::placeholder {
+  color: rgba(255, 255, 255, 0.35);
+}
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: var(--color-teal);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .marquee-track,
+  .mesh-bg {
+    animation: none;
+  }
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+  }
+}
+
+
+/* =====================================================================
+   Motion state. <html> gets `anim` + (`motion` | `reduce`) from a
+   pre-paint script; without it everything is simply visible.
+   ===================================================================== */
+html.anim [data-u],
+html.anim [data-fade],
+html.anim [data-fade-group] > *,
+html.anim [data-draw],
+html.anim [data-h-intro],
+html.anim [data-h-fade],
+html.reduce [data-ri] {
+  opacity: 0;
+}
+html.motion [data-ri] {
+  opacity: 0;
+}
+html.motion [data-ri="up"] {
+  clip-path: inset(100% 0 0 0);
+}
+html.motion [data-ri="down"] {
+  clip-path: inset(0 0 100% 0);
+}
+html.motion [data-ri="left"] {
+  clip-path: inset(0 100% 0 0);
+}
+html.motion [data-ri="right"] {
+  clip-path: inset(0 0 0 100%);
+}
+html.motion [data-h-line] {
+  stroke-dashoffset: 1;
+}
+
+/* Hero image: blended into the dark ground with masks, never a card */
+.hero-mask {
+  -webkit-mask-image: linear-gradient(to bottom, #000 22%, transparent 86%);
+  mask-image: linear-gradient(to bottom, #000 22%, transparent 86%);
+}
+@media (min-width: 1024px) {
+  .hero-mask {
+    -webkit-mask-image: linear-gradient(100deg, transparent 4%, #000 52%),
+      linear-gradient(to bottom, #000 58%, transparent 100%);
+    mask-image: linear-gradient(100deg, transparent 4%, #000 52%),
+      linear-gradient(to bottom, #000 58%, transparent 100%);
+    -webkit-mask-composite: source-in;
+    mask-composite: intersect;
+  }
+}
+
+
+/* outlined display type */
+.outline-text {
+  color: transparent;
+  -webkit-text-stroke: 2px var(--color-slate);
+}
+@media (min-width: 768px) {
+  .outline-text {
+    -webkit-text-stroke-width: 3px;
+  }
+}
+
+/* Inner-page hero (PageHero) */
+html.anim [data-ph-fade] {
+  opacity: 0;
+}
+html.motion [data-ph-img] {
+  clip-path: inset(0 0 0 100%);
+}
+html.reduce [data-ph-img] {
+  opacity: 0;
+}
+html.motion [data-ph-line] {
+  stroke-dashoffset: 1;
+}
+
+/* Mobile quick-contact bar: gentle slide-up after load */
+@keyframes action-bar-in {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.action-bar-in {
+  animation: action-bar-in 0.45s ease-out 0.8s both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .action-bar-in {
+    animation: none;
+  }
+}
