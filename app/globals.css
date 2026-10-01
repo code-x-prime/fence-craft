@@ -2,6 +2,7 @@
 @import "tw-animate-css";
 
 @theme inline {
+  --font-grotesk: var(--font-grotesk), ui-sans-serif, system-ui, sans-serif;
   --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
 
   /* Brand — sampled from the FENCECRAFT logo */

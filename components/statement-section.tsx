@@ -47,11 +47,24 @@ export function StatementSection() {
           </div>
         </div>
 
-        <div className="mt-8 grid md:mt-12 md:grid-cols-12">
-          <FadeIn className="md:col-span-6 md:col-start-7">
-            <p className="text-xl font-semibold leading-snug text-ink md:text-[1.7rem]">
-              Since 2016, FENCECRAFT has been building its product range around practical fencing requirements,
-              dependable supply and consistent quality.
+        <div className="mt-8 grid gap-8 md:mt-12 lg:grid-cols-12 lg:gap-14">
+          <FadeIn group className="space-y-5 font-[family-name:var(--font-grotesk)] lg:col-span-7">
+            <p className="text-xl font-medium leading-snug tracking-tight text-ink md:text-2xl">
+              Since 2016, FENCECRAFT has been delivering reliable fencing solutions built around quality,
+              performance, and practical application.
+            </p>
+            <p className="text-base leading-relaxed text-ink/70 md:text-lg">
+              With a strong focus on consistent quality, dependable supply, and customer-focused solutions, we
+              continue to expand our product range to meet the evolving requirements of residential, commercial,
+              industrial, infrastructure, and security applications.
+            </p>
+            <p className="border-l-2 border-teal pl-4 text-base font-medium leading-relaxed text-slate md:text-lg">
+              We supply Pan India, including Delhi NCR.
+            </p>
+          </FadeIn>
+          <FadeIn className="flex items-end font-[family-name:var(--font-grotesk)] lg:col-span-5">
+            <p className="text-lg font-semibold tracking-tight text-slate md:text-xl">
+              FENCECRAFT <span className="text-teal">Strong Solutions. Reliable Protection.</span>
             </p>
           </FadeIn>
         </div>

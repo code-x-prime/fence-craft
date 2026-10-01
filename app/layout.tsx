@@ -1,6 +1,6 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
-import { Manrope } from 'next/font/google'
+import { Manrope, Space_Grotesk } from 'next/font/google'
 import { CursorFollower } from '@/components/animations/CursorFollower'
 import { Footer } from '@/components/footer'
 import { Header } from '@/components/header'
@@ -8,6 +8,12 @@ import { MobileActionBar } from '@/components/mobile-action-bar'
 import { site } from '@/lib/site'
 import { siteImages } from '@/lib/site-images'
 import './globals.css'
+
+const grotesk = Space_Grotesk({
+  subsets: ['latin'],
+  variable: '--font-grotesk',
+  display: 'swap',
+})
 
 const manrope = Manrope({
   subsets: ['latin'],
@@ -74,7 +80,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={manrope.variable} suppressHydrationWarning>
+    <html lang="en" className={`${manrope.variable} ${grotesk.variable}`} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: motionGate }} />
       </head>
