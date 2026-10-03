@@ -41,7 +41,7 @@ export const categories: Category[] = [
     name: 'Galvanized Iron',
     footerLabel: 'G.I. Wire Mesh',
     description:
-      'The core of the range: wire products for perimeters, security barriers, enclosures and everyday fencing.',
+      'Versatile steel mesh and security wire for boundaries, site enclosures and farm fencing. Explore chain link, welded and hexagonal patterns alongside barbed wire and razor products.',
     image: siteImages.galvanized.src,
     alt: siteImages.galvanized.alt,
   },
@@ -51,7 +51,7 @@ export const categories: Category[] = [
     code: 'S.S.',
     name: 'Stainless Steel',
     footerLabel: 'S.S. Wire Mesh',
-    description: 'Stainless mesh for applications that need a cleaner, more durable material.',
+    description: 'Stainless steel mesh for screens, guards and fabrication, including fine insect screening. Discuss grades 201, 202 and 304 with our team to suit your application.',
     image: siteImages.stainlessSteel.src,
     alt: siteImages.stainlessSteel.alt,
   },
@@ -61,7 +61,7 @@ export const categories: Category[] = [
     code: 'AL',
     name: 'Aluminium',
     footerLabel: 'Aluminium Mesh',
-    description: 'Lightweight aluminium mesh for general fencing, screening and decorative applications.',
+    description: 'Lightweight mesh for window screens, ventilation panels and decorative grilles. Choose woven wire or a diamond pattern around the opening and finish you need.',
     image: siteImages.aluminium.src,
     alt: siteImages.aluminium.alt,
   },
@@ -71,7 +71,7 @@ export const categories: Category[] = [
     code: 'PVC',
     name: 'PVC Coated / Plastic Mesh',
     footerLabel: 'PVC / Plastic Mesh',
-    description: 'Coated and plastic meshes and nets for gardens, enclosures and general protection.',
+    description: 'Green coated wire mesh and practical protective netting for gardens, balconies and growing areas. Find garden mesh, insect screens, shade net and bird net in one range.',
     image: siteImages.pvc.src,
     alt: siteImages.pvc.alt,
   },
@@ -84,7 +84,7 @@ export const products: Product[] = [
     name: 'Concertina Coil / Wire',
     category: 'galvanized-iron',
     description:
-      'Concertina coil, also called razor wire, is a coiled barrier wire that adds a strong deterrent to the top or edge of a boundary.',
+      'An expanding coil of razor wire designed to add a visible physical deterrent along perimeter fences and boundary walls. Discuss coil size, quantity and mounting requirements for your site.',
     image: siteImages.concertina.src,
     alt: siteImages.concertina.alt,
     applications: [
@@ -99,7 +99,7 @@ export const products: Product[] = [
     name: 'RBT — Razor Barbed Tape',
     category: 'galvanized-iron',
     description:
-      'Razor barbed tape (RBT) is a bladed security tape fixed along boundaries where a strong physical barrier is needed.',
+      'Stamped metal tape with sharp blades, used as an additional perimeter barrier. Suitable configurations depend on your fence or wall layout; contact us to discuss the required profile and quantity.',
     image: siteImages.rbt.src,
     alt: siteImages.rbt.alt,
     applications: [
@@ -114,7 +114,7 @@ export const products: Product[] = [
     name: 'Chain Link Wire Mesh',
     category: 'galvanized-iron',
     description:
-      'Woven diamond-pattern mesh, one of the most common choices for boundary and enclosure fencing.',
+      'Interwoven steel wire creates a flexible diamond pattern for open, visible boundaries. A practical option for factory yards, sports spaces and farm enclosures, with specifications confirmed on enquiry.',
     image: siteImages.chainLink.src,
     alt: siteImages.chainLink.alt,
     applications: [
@@ -128,7 +128,7 @@ export const products: Product[] = [
     slug: 'barbed-wire',
     name: 'Barbed Wire',
     category: 'galvanized-iron',
-    description: 'Twisted strand wire with barbs, used for boundary marking and basic perimeter protection.',
+    description: 'Twisted wire strands with regularly spaced barbs for agricultural boundaries and perimeter deterrence. Discuss the wire specification, run length and number of strands your boundary needs.',
     image: siteImages.barbedWire.src,
     alt: siteImages.barbedWire.alt,
     applications: [
@@ -142,7 +142,7 @@ export const products: Product[] = [
     slug: 'mosquito-wire-mesh',
     name: 'Mosquito Wire Mesh',
     category: 'galvanized-iron',
-    description: 'Fine galvanized wire mesh used as insect screening where airflow needs to be kept.',
+    description: 'Fine galvanized woven mesh for doors, windows and ventilation openings. Its small apertures provide insect screening while preserving airflow; choose specifications around your frame and application.',
     image: siteImages.mosquitoWireMesh.src,
     alt: siteImages.mosquitoWireMesh.alt,
     applications: ['Windows and doors', 'Ventilation openings', 'Enclosures that need airflow and insect control'],
@@ -152,7 +152,7 @@ export const products: Product[] = [
     name: 'Welded Wire Mesh',
     category: 'galvanized-iron',
     description:
-      'Wire mesh with joined crossing wires, forming a rigid, even grid that suits fencing panels and general use.',
+      'Crossing steel wires welded at each intersection form a regular square grid. Used in boundary panels, enclosures and guards, with the mesh opening and wire size selected around the application.',
     image: siteImages.weldedMesh.src,
     alt: siteImages.weldedMesh.alt,
     applications: [
@@ -167,7 +167,7 @@ export const products: Product[] = [
     name: 'Hexagonal / Chicken Wire Mesh',
     category: 'galvanized-iron',
     description:
-      'Hexagonal wire mesh, commonly known as chicken mesh, woven in a flexible six-sided pattern.',
+      'Flexible wire netting woven into six-sided openings, commonly called chicken wire. Useful for poultry enclosures, garden protection and light fencing where a shaped or wrapped mesh is needed.',
     image: siteImages.hexagonal.src,
     alt: siteImages.hexagonal.alt,
     applications: [
@@ -182,9 +182,9 @@ export const products: Product[] = [
     slug: 'stainless-steel-wire-mesh',
     name: 'Stainless Steel Welded Wire Mesh',
     category: 'stainless-steel',
-    description: 'Welded wire mesh in stainless steel, for applications that need a cleaner, more durable material.',
-    image: siteImages.stainlessSteel.src,
-    alt: siteImages.stainlessSteel.alt,
+    description: 'A welded square grid in stainless steel for partitions, guards and fabrication. Available grade options include 201, 202 and 304; our team can discuss the specification your environment requires.',
+    image: siteImages.stainlessProduct.src,
+    alt: siteImages.stainlessProduct.alt,
     applications: [
       'Industrial and process use',
       'Guards and partitions',
@@ -197,7 +197,7 @@ export const products: Product[] = [
     slug: 'stainless-steel-mosquito-mesh',
     name: 'Stainless Steel Mosquito Wire Mesh',
     category: 'stainless-steel',
-    description: 'Fine stainless steel mesh for durable insect screening.',
+    description: 'Fine woven stainless steel screening for window, door and ventilation frames. Compare grades 201, 202 and 304, and confirm the aperture and wire specification before ordering.',
     image: siteImages.stainlessMosquito.src,
     alt: siteImages.stainlessMosquito.alt,
     applications: ['Windows and doors', 'Ventilation openings', 'Premises needing long-lasting insect screening'],
@@ -208,16 +208,16 @@ export const products: Product[] = [
     slug: 'aluminium-wire-mesh',
     name: 'Aluminium Wire Mesh',
     category: 'aluminium',
-    description: 'Lightweight aluminium wire mesh for general fencing and screening.',
-    image: siteImages.aluminium.src,
-    alt: siteImages.aluminium.alt,
+    description: 'Lightweight woven aluminium mesh for window screens, ventilation and light enclosures. A useful choice when handling weight matters; contact us for mesh openings, roll sizes and availability.',
+    image: siteImages.aluminiumProduct.src,
+    alt: siteImages.aluminiumProduct.alt,
     applications: ['General fencing and screening', 'Windows and ventilation', 'Lightweight enclosures'],
   },
   {
     slug: 'diamond-barfi-wire-mesh',
     name: 'Diamond / Barfi Wire Mesh',
     category: 'aluminium',
-    description: 'Aluminium mesh in a diamond (barfi) pattern.',
+    description: 'Aluminium mesh with repeating diamond-shaped openings, also known as barfi mesh. Used in grilles, ventilation panels and decorative screens where an open geometric pattern is required.',
     image: siteImages.diamondBarfi.src,
     alt: siteImages.diamondBarfi.alt,
     applications: ['Screens and grilles', 'Ventilation panels', 'Light enclosures'],
@@ -227,9 +227,9 @@ export const products: Product[] = [
     slug: 'pvc-garden-mesh',
     name: 'PVC Hexa / Garden Mesh',
     category: 'pvc-plastic-mesh',
-    description: 'PVC-coated hexagonal mesh suited to gardens and light enclosures.',
-    image: siteImages.pvc.src,
-    alt: siteImages.pvc.alt,
+    description: 'Hexagonal wire mesh with a green PVC coating for garden boundaries, plant protection and light animal enclosures. Its flexible pattern works around posts, beds and shaped garden areas.',
+    image: siteImages.pvcGarden.src,
+    alt: siteImages.pvcGarden.alt,
     applications: [
       'Garden fencing',
       'Plant supports and protection',
@@ -241,7 +241,7 @@ export const products: Product[] = [
     slug: 'pvc-wire-mesh',
     name: 'PVC Wire Mesh',
     category: 'pvc-plastic-mesh',
-    description: 'PVC-coated wire mesh with a protective outer coating for outdoor use.',
+    description: 'Wire mesh with a PVC outer coating for garden fences, parks and general enclosures. Discuss the required mesh pattern, opening and wire size to match the boundary you are planning.',
     image: siteImages.pvcWire.src,
     alt: siteImages.pvcWire.alt,
     applications: ['Fencing and enclosures', 'Garden and park boundaries', 'General outdoor applications'],
@@ -250,7 +250,7 @@ export const products: Product[] = [
     slug: 'mosquito-net',
     name: 'Mosquito Net',
     category: 'pvc-plastic-mesh',
-    description: 'Fine netting for keeping insects out while letting air through.',
+    description: 'Fine lightweight netting for insect screening in doors, windows and ventilation frames. Share your frame dimensions and installation requirement to confirm the suitable net specification.',
     image: siteImages.mosquitoNet.src,
     alt: siteImages.mosquitoNet.alt,
     applications: ['Windows and doors', 'Ventilation openings', 'Frames and enclosures'],
@@ -259,7 +259,7 @@ export const products: Product[] = [
     slug: 'shade-net',
     name: 'Shade Net / Green Net',
     category: 'pvc-plastic-mesh',
-    description: 'Net used to filter sunlight and provide shade over plants and open areas.',
+    description: 'Woven shade netting for nurseries, garden structures and outdoor screening. Select the shade requirement and coverage area around your plants or space; specifications are available on enquiry.',
     image: siteImages.shadeNet.src,
     alt: siteImages.shadeNet.alt,
     applications: ['Agriculture and nurseries', 'Gardens and outdoor areas', 'Site screening and shading'],
@@ -268,7 +268,7 @@ export const products: Product[] = [
     slug: 'bird-net',
     name: 'Bird Net',
     category: 'pvc-plastic-mesh',
-    description: 'Lightweight netting used to keep birds away from crops and open spaces.',
+    description: 'Lightweight protective netting for balconies, terraces, orchards and growing areas. Define the area and opening size you need to cover, then confirm the net and installation requirements with our team.',
     image: siteImages.birdNet.src,
     alt: siteImages.birdNet.alt,
     applications: ['Orchards and crops', 'Terraces and balconies', 'Storage and open spaces'],
@@ -286,11 +286,11 @@ export function relatedProducts(product: Product, count = 3) {
   return [...same, ...others].slice(0, count)
 }
 
-/** Greedy word-wrap of a name into upper-case display lines for headings. */
+/** Greedy word-wrap of a name into display lines for headings. */
 export function titleLines(name: string, maxChars = 15): string[] {
   const lines: string[] = []
   let cur = ''
-  for (const w of name.toUpperCase().split(' ')) {
+  for (const w of name.split(' ')) {
     if (cur && (cur + ' ' + w).length > maxChars) {
       lines.push(cur)
       cur = w

@@ -1,59 +1,38 @@
-/**
- * Every photograph on the site lives here: one place to swap an image, its
- * alt text or its crop. Components and data files import from `siteImages`
- * and never hard-code a path.
- *
- * Rule: one section = one image. Photos are real stock photography (no AI
- * renders); replace any of them with FENCECRAFT's own product photos by
- * dropping a file into /public/images/final and editing the path below.
- */
-export type SiteImage = {
-  src: string
-  alt: string
-  /** Tailwind object-position class, used where the subject needs framing. */
-  position?: string
-}
-
-const img = (file: string, alt: string, position?: string): SiteImage => ({
-  src: `/images/final/${file}`,
-  alt,
-  position,
-})
-
+﻿/** Project-owned generated visuals. Prompts: docs/image-generation.json. */
+export type SiteImage = { src: string; alt: string; position?: string }
+const img = (file: string, alt: string, position?: string): SiteImage => ({ src: `/images/generated/${file}.webp`, alt, position })
 export const siteImages = {
-  // ---- primary section images -------------------------------------------
-  hero: img('hero.jpg', 'Close-up of welded steel wire mesh, dark and sharp, with a fine square grid', 'object-[60%_50%]'),
-  about: img('about.jpg', 'Stacked galvanized welded wire mesh panels in a warehouse'),
-  galvanized: img('galvanized.jpg', 'Rolls of galvanized diamond wire mesh, stacked side by side'),
-  stainlessSteel: img('stainless.jpg', 'Close-up of stainless steel welded wire mesh with a regular square grid'),
-  aluminium: img('aluminium.jpg', 'Close-up of aluminium wire mesh with a fine hexagonal pattern'),
-  pvc: img('pvc.jpg', 'Green PVC coated welded mesh garden fence with plants behind it'),
-  industrial: img('industrial.jpg', 'Welded wire mesh security fence with cameras around an industrial site'),
-  security: img('security.jpg', 'Razor barbed wire coils along the top of a fence against a blue sky'),
-  construction: img('construction.jpg', 'Temporary wire mesh fence panels enclosing a construction site'),
-  agricultural: img('agricultural.jpg', 'Cow looking through a barbed wire farm fence in a field', 'object-[50%_45%]'),
-  residential: img('residential.jpg', 'Galvanized chain link fencing in close-up against a soft sky'),
-  commercial: img('commercial.jpg', 'Grey welded mesh fence panels beside a commercial building'),
-
-  // ---- inner-page heroes ------------------------------------------------
-  aboutHero: img('about-hero.jpg', 'Rolls of galvanized steel, chicken wire and plastic mesh in a stock room'),
-  productsHero: img('products-hero.jpg', 'Rolls of welded wire mesh lined up in a row, shot at low angle'),
-  solutionsHero: img('solutions-hero.jpg', 'Long high-security wire mesh fence with floodlights under a blue sky'),
-  contactHero: img('contact-hero.jpg', 'Razor barbed wire against a deep blue sky'),
-  notFound: img('diamond-mesh.jpg', 'Blue-lit diamond pattern expanded metal mesh in close-up'),
-
-  // ---- product images (one primary image per product) --------------------
-  concertina: img('concertina.jpg', 'Coils of concertina razor wire lying in grass'),
-  rbt: img('security.jpg', 'Razor barbed tape coiled along the top of a fence against a blue sky'),
-  chainLink: img('chain-link.jpg', 'Galvanized chain link fencing in close-up against a soft sky'),
-  barbedWire: img('barbed-wire.jpg', 'Barbed wire strung along a fence line in warm evening light'),
-  mosquitoWireMesh: img('mosquito-mesh.jpg', 'Fine dark wire mesh in close-up'),
-  weldedMesh: img('about.jpg', 'Stacked galvanized welded wire mesh panels in a warehouse'),
-  hexagonal: img('hexagonal.jpg', 'Cattle standing inside a farm enclosure fenced with wire mesh'),
-  stainlessMosquito: img('stainless-mosquito.jpg', 'Fine welded wire mesh with an even square grid, in close-up'),
-  diamondBarfi: img('diamond-mesh.jpg', 'Blue-lit diamond pattern expanded metal mesh in close-up'),
-  pvcWire: img('pvc-panel.jpg', 'Green PVC coated wire mesh fence panels along a garden path'),
-  mosquitoNet: img('mosquito-net.jpg', 'Fitting fine mosquito screen mesh into a frame with hand tools'),
-  shadeNet: img('shade-net.jpg', 'Polytunnel greenhouse and planted rows in an open agricultural field'),
-  birdNet: img('bird-net.jpg', 'White protective netting stretched over rows of trees in an orchard'),
+  hero: img("hero", "A premium industrial warehouse perimeter with perfectly installed charcoal welded steel mesh fence receding to the right", "object-[60%_50%]"),
+  about: img("about", "Neatly stacked galvanized welded mesh panels in a tidy fabrication workshop"),
+  galvanized: img("galvanized", "Three galvanized steel chain link mesh rolls on a clean warm grey studio floor"),
+  stainlessSteel: img("stainless", "Stainless steel welded square wire mesh sheet leaning against warm grey studio backdrop"),
+  aluminium: img("aluminium", "Lightweight silver aluminium woven fine square insect screening mesh roll with curled end on grey studio surface"),
+  pvc: img("pvc", "Green PVC coated hexagonal garden mesh roll"),
+  industrial: img("industrial", "Long charcoal steel mesh fence and access gate enclosing a modern industrial warehouse in daylight"),
+  security: img("security", "Galvanized concertina razor wire neatly mounted on top of tall steel perimeter fence"),
+  construction: img("construction", "Temporary steel welded mesh fencing panels on concrete feet enclosing an orderly active building site"),
+  agricultural: img("agricultural", "Wire mesh farm fence along a lush green orchard and farmland"),
+  residential: img("residential", "Elegant green wire mesh garden boundary at a modern home"),
+  commercial: img("commercial", "Steel welded mesh boundary and gate beside modern commercial campus"),
+  aboutHero: img("about-hero", "Wide organized wire mesh fabrication workshop with mesh rolls and steel panels"),
+  productsHero: img("products-hero", "Beautiful lineup of steel chain link rolls"),
+  solutionsHero: img("solutions-hero", "Architectural panorama of long welded mesh perimeter across landscaped industrial property with clear fence in foreground"),
+  contactHero: img("contact-hero", "Tidy fencing materials showroom workspace with mesh sample panels"),
+  notFound: img("diamond-mesh", "Silver aluminium expanded diamond mesh sheet with dimensional diamond openings on warm neutral studio surface"),
+  concertina: img("concertina", "Single freestanding galvanized concertina razor wire coil on neutral grey studio floor"),
+  rbt: img("rbt", "Close-up galvanized razor barbed tape coil on neutral grey studio floor"),
+  chainLink: img("chain-link", "Single silver galvanized chain link mesh roll partially unrolled on neutral grey studio floor"),
+  barbedWire: img("barbed-wire", "A tidy coil of double strand galvanized barbed wire on warm grey studio floor with one strand extending towards camera"),
+  mosquitoWireMesh: img("mosquito-mesh", "Fine galvanized square insect screen mesh roll partially unrolled on grey studio surface"),
+  weldedMesh: img("welded-mesh", "Freestanding galvanized welded steel square grid panels and a partly rolled mesh sheet on neutral studio floor"),
+  hexagonal: img("hexagonal", "Galvanized hexagonal chicken wire roll partially unrolled on grey studio floor"),
+  stainlessMosquito: img("stainless-mosquito", "Fine stainless steel insect screen mesh in a silver aluminium window sample frame on studio surface"),
+  stainlessProduct: img("stainless-product", "Stainless steel welded wire mesh panels with accurate square openings"),
+  aluminiumProduct: img("aluminium-product", "Rolled aluminium fine woven square wire mesh with lightweight silver sheen on warm grey studio floor"),
+  diamondBarfi: img("diamond-mesh", "Silver aluminium expanded diamond mesh sheet with dimensional diamond openings on warm neutral studio surface"),
+  pvcGarden: img("pvc-garden", "Green PVC coated hexagonal chicken mesh installed around a raised garden bed"),
+  pvcWire: img("pvc-panel", "Green PVC coated welded square mesh roll and small panel on neutral studio floor"),
+  mosquitoNet: img("mosquito-net", "Charcoal fine synthetic mosquito net stretched in a window frame with airy softly lit room behind"),
+  shadeNet: img("shade-net", "Green woven shade net stretched over nursery plants on simple metal supports"),
+  birdNet: img("bird-net", "Fine black bird protection net installed over a sunny apartment balcony"),
 } as const

@@ -14,7 +14,7 @@ export const solutions: Solution[] = [
   {
     number: '01',
     title: 'Industrial Perimeter',
-    text: 'Boundary fencing for plants, warehouses and industrial premises.',
+    text: 'Define the boundary around factories, warehouses and service yards while keeping sightlines open. Chain link and welded mesh suit long runs, with security wire available for added perimeter deterrence.',
     image: siteImages.industrial.src,
     alt: siteImages.industrial.alt,
     products: ['chain-link-wire-mesh', 'welded-wire-mesh', 'barbed-wire'],
@@ -22,7 +22,7 @@ export const solutions: Solution[] = [
   {
     number: '02',
     title: 'Security Fencing',
-    text: 'Barbed wire, concertina coil and razor barbed tape for secure boundaries.',
+    text: 'Add a physical deterrent to boundary walls and existing fences with barbed wire, concertina coils or razor barbed tape. Choose the barrier around the site layout and its access requirements.',
     image: siteImages.security.src,
     alt: siteImages.security.alt,
     products: ['concertina-coil', 'rbt-razor-barbed-tape', 'barbed-wire'],
@@ -30,7 +30,7 @@ export const solutions: Solution[] = [
   {
     number: '03',
     title: 'Construction',
-    text: 'Site boundaries and enclosures that are quick to set up and easy to move.',
+    text: 'Separate working areas, mark site boundaries and manage access during construction. Mesh panels, chain link and shade netting support different enclosure and screening requirements.',
     image: siteImages.construction.src,
     alt: siteImages.construction.alt,
     products: ['welded-wire-mesh', 'chain-link-wire-mesh', 'shade-net'],
@@ -38,7 +38,7 @@ export const solutions: Solution[] = [
   {
     number: '04',
     title: 'Agricultural & Farm',
-    text: 'Enclosures for livestock, orchards and farm boundaries, plus netting for crops.',
+    text: 'Create practical farm boundaries and poultry enclosures, or protect growing areas with bird and shade netting. Match the mesh opening and material to the animals, crops and area involved.',
     image: siteImages.agricultural.src,
     alt: siteImages.agricultural.alt,
     products: ['hexagonal-chicken-wire-mesh', 'barbed-wire', 'bird-net', 'shade-net'],
@@ -46,7 +46,7 @@ export const solutions: Solution[] = [
   {
     number: '05',
     title: 'Residential / General',
-    text: 'Garden, home and everyday boundary fencing and screening.',
+    text: 'Shape garden boundaries, protect planted areas and screen windows without closing off airflow. Explore coated garden mesh, welded mesh and fine insect screening for everyday use.',
     image: siteImages.residential.src,
     alt: siteImages.residential.alt,
     products: ['pvc-garden-mesh', 'welded-wire-mesh', 'mosquito-wire-mesh'],
@@ -54,7 +54,7 @@ export const solutions: Solution[] = [
   {
     number: '06',
     title: 'Commercial & Infrastructure',
-    text: 'Protective barriers and fencing for commercial and public spaces.',
+    text: 'Define access around offices, commercial grounds and shared spaces with mesh fencing and screening. Select from galvanized, stainless steel and aluminium products to suit the application.',
     image: siteImages.commercial.src,
     alt: siteImages.commercial.alt,
     products: ['welded-wire-mesh', 'chain-link-wire-mesh', 'aluminium-wire-mesh', 'stainless-steel-wire-mesh'],

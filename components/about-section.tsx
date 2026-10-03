@@ -38,7 +38,7 @@ export function AboutSection() {
             </FadeIn>
             <RevealText
               as="h2"
-              lines={['BUILT ON EXPERIENCE.', 'FOCUSED ON RELIABILITY.']}
+              lines={['Built on experience.', 'Focused on reliability.']}
               className="display mt-4 h-section-md leading-[1.02] text-slate"
             />
             <span id="about-title" className="sr-only">
@@ -46,13 +46,11 @@ export function AboutSection() {
             </span>
             <FadeIn group className="mt-5 space-y-4">
               <p className="text-lg font-semibold leading-snug text-ink md:text-xl">
-                Established in 2016, FENCECRAFT is a trusted and growing brand specializing in wire mesh, fencing
-                products and complete fencing solutions.
+                From a simple garden enclosure to an industrial boundary, the right fencing starts with the right material.
               </p>
               <p className="text-sm leading-relaxed text-ink/70 md:text-base">
-                Backed by years of industry experience, we manufacture and supply a comprehensive range of products
-                including welded mesh, chicken mesh, hexagonal wire mesh, PVC and plastic mesh, chain link fencing,
-                barbed wire, concertina coil and other fencing-related products.
+                Established in 2016 and backed by S.B. ENTERPRISES in Delhi, FENCECRAFT manufactures and supplies
+                wire mesh, security fencing and protective netting. Explore the range, compare applications and talk to us about your project.
               </p>
             </FadeIn>
             <FadeIn as="dl" group className="mt-6 grid border-t border-line sm:grid-cols-3">
@@ -83,7 +81,7 @@ export function AboutSection() {
           </FadeIn>
           <RevealText
             as="h2"
-            lines={['BUILT FOR REAL-WORLD', 'PROTECTION.']}
+            lines={['Made for everyday', 'protection.']}
             className="display mt-4 h-section leading-[1.02] text-slate"
           />
           <ol className="mt-8 grid gap-x-8 gap-y-8 md:mt-10 md:grid-cols-2 lg:grid-cols-4">

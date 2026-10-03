@@ -151,7 +151,7 @@ export function Header() {
       id="mobile-menu"
       ref={menu}
       inert={!open}
-      className="invisible fixed inset-0 z-[45] flex flex-col bg-deep px-4 pb-6 pt-24 text-white opacity-0 sm:px-6 lg:hidden"
+      className="invisible fixed inset-0 z-[45] flex flex-col overflow-y-auto bg-deep px-4 pb-24 pt-24 text-white opacity-0 sm:px-6 lg:hidden"
     >
       <nav aria-label="Mobile" className="flex flex-1 flex-col">
         {nav.map((item, i) => (

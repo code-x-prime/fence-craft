@@ -20,7 +20,7 @@ export function ApplicationsSection() {
           </FadeIn>
           <RevealText
             as="h2"
-            lines={['FENCING FOR EVERY', 'REQUIREMENT']}
+            lines={['A solution for', 'every space.']}
             className="display mt-4 h-section-md leading-[1.02] text-slate"
           />
           <span id="solutions-title" className="sr-only">

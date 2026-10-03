@@ -85,15 +85,14 @@ export function ContactForm({ defaultRequirement = '' }: { defaultRequirement?: 
       </label>
       <div className="flex flex-col gap-3 sm:col-span-2 sm:flex-row">
         <BrandButton type="submit" variant="primary">
-          Send Enquiry
+          Enquire on WhatsApp
         </BrandButton>
         <BrandButton type="button" variant="outline-light" onClick={viaEmail}>
           Email Instead
         </BrandButton>
       </div>
       <p id="form-note" className="text-xs leading-relaxed text-white/55 sm:col-span-2">
-        This form does not store anything on the website. Send Enquiry opens WhatsApp, and Email Instead opens your
-        email app, with your details filled in for you to review and send.
+        Choose WhatsApp or email to review your enquiry and send it directly to our team.
       </p>
     </form>
   )

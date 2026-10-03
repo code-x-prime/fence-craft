@@ -17,7 +17,7 @@ export function ProductShowcase() {
             </FadeIn>
             <RevealText
               as="h2"
-              lines={['OUR PRODUCT', 'RANGE']}
+              lines={['Explore the', 'product range.']}
               className="display mt-4 h-section leading-[1.02] text-slate"
             />
             <span id="products-title" className="sr-only">

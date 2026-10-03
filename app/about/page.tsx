@@ -28,7 +28,7 @@ export default function AboutPage() {
     <main>
       <PageHero
         eyebrow="About FENCECRAFT"
-        title={['ABOUT', 'FENCECRAFT']}
+        title={['Practical experience.', 'Dependable fencing.']}
         subtitle="Built on experience. Focused on reliability."
         image={siteImages.aboutHero}
         breadcrumb={[{ label: 'Home', href: '/' }, { label: 'About' }]}
@@ -42,15 +42,15 @@ export default function AboutPage() {
           </FadeIn>
           <RevealText
             as="h2"
-            lines={['ESTABLISHED', 'IN 2016']}
+            lines={['Our story began', 'in 2016.']}
             className="display mt-4 h-statement leading-[0.95] text-slate"
           />
           <div className="mt-8 grid gap-8 lg:grid-cols-12 lg:items-stretch lg:gap-14">
             <div className="flex flex-col justify-between gap-10 lg:col-span-5">
               <FadeIn>
                 <p className="text-xl font-semibold leading-snug text-ink md:text-2xl">
-                  Established in 2016, FENCECRAFT is a trusted and growing brand specializing in wire mesh, fencing
-                  products and complete fencing solutions.
+                  Since 2016, FENCECRAFT has brought wire mesh, security fencing and protective netting together
+                  in one practical range. Based in Delhi, we help customers choose products around the space they need to protect.
                 </p>
               </FadeIn>
               <FadeIn as="dl" group className="border-t border-slate/25">
@@ -86,10 +86,10 @@ export default function AboutPage() {
         tone="dark"
         flip
         eyebrow="How we work"
-        lines={['BUILT AROUND', 'REAL REQUIREMENTS']}
+        lines={['Built around', 'your requirements.']}
         paragraphs={[
-          'Backed by years of industry experience, we manufacture and supply a comprehensive range of products including welded mesh, chicken mesh, hexagonal wire mesh, PVC and plastic mesh, chain link fencing, barbed wire, concertina coil and other fencing-related products.',
-          'FENCECRAFT is a brand of S.B. ENTERPRISES, based in Delhi.',
+          'Every requirement starts with the application: a factory boundary, a farm enclosure, a garden or a window screen. We help you narrow down the material and mesh type before discussing specifications and quantity.',
+          'Our range includes welded and chain link mesh, hexagonal netting, PVC-coated products, barbed wire and concertina coils. FENCECRAFT is backed by S.B. ENTERPRISES in Delhi.',
         ]}
         image={siteImages.industrial}
       >
@@ -103,7 +103,7 @@ export default function AboutPage() {
         <div className="wrap">
           <SectionHeading
             eyebrow="Product expertise"
-            lines={['OUR PRODUCT', 'EXPERTISE']}
+            lines={['Know the material.', 'Choose with confidence.']}
             size="md"
             split
             description="Four material families, each with its own range of products."
@@ -138,7 +138,7 @@ export default function AboutPage() {
       {/* 4 — vision / mission */}
       <VisionMission />
 
-      <CTASection lines={['LOOKING FOR THE', 'RIGHT FENCING', 'SOLUTION?']} />
+      <CTASection lines={['Your boundary.', 'Our expertise.']} />
     </main>
   )
 }

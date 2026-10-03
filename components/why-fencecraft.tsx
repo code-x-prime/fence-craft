@@ -3,10 +3,10 @@ import { FadeIn } from '@/components/animations/FadeIn'
 import { RevealText } from '@/components/animations/RevealText'
 
 const reasons = [
-  { n: '01', title: 'CONSISTENT QUALITY', text: 'Reliable fencing products manufactured/supplied with focus on consistent quality.' },
-  { n: '02', title: 'COMPETITIVE PRICING', text: 'Cost-effective solutions for different project requirements.' },
-  { n: '03', title: 'RELIABLE SUPPLY', text: 'Responsive supply support and dependable service.' },
-  { n: '04', title: 'TAILORED SOLUTIONS', text: 'Products and solutions based on specific customer and project requirements.' },
+  { n: '01', title: 'Consistent quality', text: 'A focus on the material, mesh pattern and finish your application requires.' },
+  { n: '02', title: 'Practical pricing', text: 'Discuss specifications and quantity together to find a suitable option for your budget.' },
+  { n: '03', title: 'Supply support', text: 'Confirm availability and delivery requirements directly with our Delhi team.' },
+  { n: '04', title: 'The right fit', text: 'Choose products around your boundary, screening or enclosure requirements.' },
 ]
 
 export function WhyFencecraft() {

@@ -4,13 +4,13 @@ import { RevealText } from '@/components/animations/RevealText'
 const blocks = [
   {
     from: 'left' as const,
-    lines: ['OUR', 'VISION'],
-    text: 'To establish FENCECRAFT as a trusted and recognized name in the fencing industry, known for quality, reliability and complete fencing solutions.',
+    lines: ['Our', 'vision.'],
+    text: 'To make choosing dependable fencing simpler, with a practical range for the spaces people live, work and grow in.',
   },
   {
     from: 'right' as const,
-    lines: ['OUR', 'MISSION'],
-    text: 'To provide reliable, cost-effective and quality fencing products and solutions, supported by dependable service and timely supply.',
+    lines: ['Our', 'mission.'],
+    text: 'To connect every requirement with a suitable product, supported by clear advice, responsive service and dependable supply.',
   },
 ]
 

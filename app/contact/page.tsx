@@ -23,7 +23,8 @@ export default async function ContactPage({ searchParams }: { searchParams: Prom
     <main>
       <PageHero
         eyebrow="Contact"
-        title={["LET'S DISCUSS YOUR", 'FENCING REQUIREMENT.']}
+        title={["Let's plan your", 'next boundary.']}
+        subtitle="Share your application, quantity and delivery location. We'll help you choose the right mesh or fencing product."
         size="md"
         image={siteImages.contactHero}
         breadcrumb={[{ label: 'Home', href: '/' }, { label: 'Contact' }]}

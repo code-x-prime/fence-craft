@@ -13,8 +13,8 @@ type Props = {
 
 /** The one closing call-to-action, with a slowly drifting mesh and parallax layer. */
 export function CTASection({
-  lines = ['NEED THE', 'RIGHT FENCING', 'SOLUTION?'],
-  text = 'Tell us what you need. Our team can help you identify the right fencing product for your application.',
+  lines = ['Good fencing starts', 'with a conversation.'],
+  text = 'Tell us about your space, quantity and delivery location. We will help you find a suitable product and confirm the specifications.',
   primary = { label: 'Request a Quote', href: '/contact' },
   secondary = { label: 'WhatsApp Us', href: site.whatsappHref },
 }: Props) {

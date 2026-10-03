@@ -86,7 +86,7 @@ export function PageHero({ eyebrow, title, subtitle, description, image, breadcr
               src={image.src}
               alt={image.alt}
               fill
-              priority
+              preload
               sizes="100vw"
               className={`object-cover ${image.position ?? 'object-center'}`}
             />
@@ -99,7 +99,7 @@ export function PageHero({ eyebrow, title, subtitle, description, image, breadcr
         aria-hidden
         viewBox="0 0 1440 960"
         preserveAspectRatio="xMidYMid slice"
-        className="pointer-events-none absolute inset-0 h-full w-full text-teal [mask-image:linear-gradient(100deg,transparent_30%,#000_75%)]"
+        className="pointer-events-none absolute inset-0 h-full w-full text-teal/20 [mask-image:linear-gradient(100deg,transparent_30%,#000_75%)]"
       >
         <g fill="none" stroke="currentColor" strokeWidth="1" opacity="0.3">
           {[...diagA, ...diagB].map((d, i) => (

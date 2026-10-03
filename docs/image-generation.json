@@ -1,0 +1,165 @@
+{
+  "mode": "built-in image_gen",
+  "assets": [
+    {
+      "name": "hero",
+      "source": "C:\\Users\\welcome\\.codex\\generated_images\\01a10271-4921-7ba2-8c6d-93f9146322e2\\exec-4f604ab9-8819-4c1d-b121-329507a1693c.png",
+      "prompt": "Use case: ads-marketing. Asset type: FENCECRAFT fencing website photograph, landscape 3:2. Primary request: A premium industrial warehouse perimeter with perfectly installed charcoal welded steel mesh fence receding to the right, warm sunrise, generous darker architectural space on the left for website headline, panoramic landscape. Photorealistic premium commercial photography, realistic wire geometry, clean materials, slate and green palette, warm natural light, sharp subject, no logos, no text, no watermark."
+    },
+    {
+      "name": "about",
+      "source": "C:\\Users\\welcome\\.codex\\generated_images\\01a10271-4921-7ba2-8c6d-93f9146322e2\\exec-8ba5f15c-390f-4acf-9dfb-6f3b9dff4111.png",
+      "prompt": "Use case: product-mockup. Asset type: FENCECRAFT fencing website photograph, landscape 3:2. Primary request: Neatly stacked galvanized welded mesh panels in a tidy fabrication workshop, three-quarter view, detailed welds and silver finish, soft daylight. Photorealistic premium commercial photography, realistic accurate wire geometry, clean materials, natural slate and green palette, soft natural light, sharp subject. Constraints: no logos, no text, no watermark."
+    },
+    {
+      "name": "galvanized",
+      "source": "C:\\Users\\welcome\\.codex\\generated_images\\01a10271-4921-7ba2-8c6d-93f9146322e2\\exec-502f738a-b109-4c35-89e3-25f47f362531.png",
+      "prompt": "Use case: product-mockup. Asset type: FENCECRAFT fencing website photograph, landscape 3:2. Primary request: Three galvanized steel chain link mesh rolls on a clean warm grey studio floor, diamond weaving sharply visible, premium product catalogue photograph. Photorealistic premium commercial photography, realistic accurate wire geometry, clean materials, natural slate and green palette, soft natural light, sharp subject. Constraints: no logos, no text, no watermark."
+    },
+    {
+      "name": "stainless",
+      "source": "C:\\Users\\welcome\\.codex\\generated_images\\01a10271-4921-7ba2-8c6d-93f9146322e2\\exec-fb9ddb56-91ff-424a-b43c-04950e6ed953.png",
+      "prompt": "Use case: product-mockup. Asset type: FENCECRAFT fencing website photograph, landscape 3:2. Primary request: Stainless steel welded square wire mesh sheet leaning against warm grey studio backdrop, crisp polished metallic intersections, premium catalogue photograph. Photorealistic premium commercial photography, realistic accurate wire geometry, clean materials, natural slate and green palette, soft natural light, sharp subject. Constraints: no logos, no text, no watermark."
+    },
+    {
+      "name": "aluminium",
+      "source": "C:\\Users\\welcome\\.codex\\generated_images\\01a10271-4921-7ba2-8c6d-93f9146322e2\\exec-0293f55d-9370-4b48-81b8-02e84e58d77d.png",
+      "prompt": "Use case: product-mockup. Asset type: FENCECRAFT fencing website photograph, landscape 3:2. Primary request: Lightweight silver aluminium woven fine square insect screening mesh roll with curled end on grey studio surface, close product detail. Photorealistic premium commercial photography, realistic accurate wire geometry, clean materials, natural slate and green palette, soft natural light, sharp subject. Constraints: no logos, no text, no watermark."
+    },
+    {
+      "name": "pvc",
+      "source": "C:\\Users\\welcome\\.codex\\generated_images\\01a10271-4921-7ba2-8c6d-93f9146322e2\\exec-92034245-e67d-4170-b547-76c6c4a1c8b1.png",
+      "prompt": "Use case: product-mockup. Asset type: FENCECRAFT fencing website photograph, landscape 3:2. Primary request: Green PVC coated hexagonal garden mesh roll, partly unrolled on neutral grey studio floor, clear hexagonal weave. Photorealistic premium commercial photography, realistic accurate wire geometry, clean materials, natural slate and green palette, soft natural light, sharp subject. Constraints: no logos, no text, no watermark."
+    },
+    {
+      "name": "industrial",
+      "source": "C:\\Users\\welcome\\.codex\\generated_images\\01a10271-4921-7ba2-8c6d-93f9146322e2\\exec-68e634c2-30c5-48b5-89ed-f57996182739.png",
+      "prompt": "Use case: product-mockup. Asset type: FENCECRAFT fencing website photograph, landscape 3:2. Primary request: Long charcoal steel mesh fence and access gate enclosing a modern industrial warehouse in daylight, wide architectural photograph. Photorealistic premium commercial photography, realistic accurate wire geometry, clean materials, natural slate and green palette, soft natural light, sharp subject. Constraints: no logos, no text, no watermark."
+    },
+    {
+      "name": "security",
+      "source": "C:\\Users\\welcome\\.codex\\generated_images\\01a10271-4921-7ba2-8c6d-93f9146322e2\\exec-c98c4031-2528-43f3-b4d2-4a30eba65f28.png",
+      "prompt": "Use case: product-mockup. Asset type: FENCECRAFT fencing website photograph, landscape 3:2. Primary request: Galvanized concertina razor wire neatly mounted on top of tall steel perimeter fence, detailed coils, neutral sky, no people. Photorealistic premium commercial photography, realistic accurate wire geometry, clean materials, natural slate and green palette, soft natural light, sharp subject. Constraints: no logos, no text, no watermark."
+    },
+    {
+      "name": "construction",
+      "source": "C:\\Users\\welcome\\.codex\\generated_images\\01a10271-4921-7ba2-8c6d-93f9146322e2\\exec-7ef7d623-2826-44b7-a60b-90def6b415ec.png",
+      "prompt": "Use case: product-mockup. Asset type: FENCECRAFT fencing website photograph, landscape 3:2. Primary request: Temporary steel welded mesh fencing panels on concrete feet enclosing an orderly active building site, structure in background, daylight. Photorealistic premium commercial photography, realistic accurate wire geometry, clean materials, natural slate and green palette, soft natural light, sharp subject. Constraints: no logos, no text, no watermark."
+    },
+    {
+      "name": "agricultural",
+      "source": "C:\\Users\\welcome\\.codex\\generated_images\\01a10271-4921-7ba2-8c6d-93f9146322e2\\exec-1c20900d-47ce-4f84-80e6-c344ea085422.png",
+      "prompt": "Use case: product-mockup. Asset type: FENCECRAFT fencing website photograph, landscape 3:2. Primary request: Wire mesh farm fence along a lush green orchard and farmland, wooden posts, soft morning light, pastoral landscape. Photorealistic premium commercial photography, realistic accurate wire geometry, clean materials, natural slate and green palette, soft natural light, sharp subject. Constraints: no logos, no text, no watermark."
+    },
+    {
+      "name": "residential",
+      "source": "C:\\Users\\welcome\\.codex\\generated_images\\01a10271-4921-7ba2-8c6d-93f9146322e2\\exec-18425248-558a-4a1b-a508-183a91ef432b.png",
+      "prompt": "Use case: product-mockup. Asset type: FENCECRAFT fencing website photograph, landscape 3:2. Primary request: Elegant green wire mesh garden boundary at a modern home, clipped plants and garden path, inviting natural daylight. Photorealistic premium commercial photography, realistic accurate wire geometry, clean materials, natural slate and green palette, soft natural light, sharp subject. Constraints: no logos, no text, no watermark."
+    },
+    {
+      "name": "commercial",
+      "source": "C:\\Users\\welcome\\.codex\\generated_images\\01a10271-4921-7ba2-8c6d-93f9146322e2\\exec-1d0e6e9f-cd3d-459d-84a1-7cfbbd5b6d56.png",
+      "prompt": "Use case: product-mockup. Asset type: FENCECRAFT fencing website photograph, landscape 3:2. Primary request: Steel welded mesh boundary and gate beside modern commercial campus, trees and clean pedestrian path, architecture photograph. Photorealistic premium commercial photography, realistic accurate wire geometry, clean materials, natural slate and green palette, soft natural light, sharp subject. Constraints: no logos, no text, no watermark."
+    },
+    {
+      "name": "about-hero",
+      "source": "C:\\Users\\welcome\\.codex\\generated_images\\01a10271-4921-7ba2-8c6d-93f9146322e2\\exec-889b3aff-1362-49c9-98c1-5473cb9bc7ca.png",
+      "prompt": "Use case: ads-marketing. Asset type: FENCECRAFT fencing website photograph, landscape 3:2. Primary request: Wide organized wire mesh fabrication workshop with mesh rolls and steel panels, warm daylight, darker left space for website copy. Photorealistic premium commercial photography, realistic accurate wire geometry, clean materials, natural slate and green palette, soft natural light, sharp subject. Constraints: no logos, no text, no watermark."
+    },
+    {
+      "name": "products-hero",
+      "source": "C:\\Users\\welcome\\.codex\\generated_images\\01a10271-4921-7ba2-8c6d-93f9146322e2\\exec-540effc3-2e27-4216-a924-d4fb9f4814e5.png",
+      "prompt": "Use case: ads-marketing. Asset type: FENCECRAFT fencing website photograph, landscape 3:2. Primary request: Beautiful lineup of steel chain link rolls, welded square mesh sheets and green coated mesh in a clean warehouse, landscape still life, darker left space. Photorealistic premium commercial photography, realistic accurate wire geometry, clean materials, natural slate and green palette, soft natural light, sharp subject. Constraints: no logos, no text, no watermark."
+    },
+    {
+      "name": "solutions-hero",
+      "source": "C:\\Users\\welcome\\.codex\\generated_images\\01a10271-4921-7ba2-8c6d-93f9146322e2\\exec-33779ef5-76f2-4063-9d00-4b1a925ea872.png",
+      "prompt": "Use case: ads-marketing. Asset type: FENCECRAFT fencing website photograph, landscape 3:2. Primary request: Architectural panorama of long welded mesh perimeter across landscaped industrial property with clear fence in foreground, warm morning light. Photorealistic premium commercial photography, realistic accurate wire geometry, clean materials, natural slate and green palette, soft natural light, sharp subject. Constraints: no logos, no text, no watermark."
+    },
+    {
+      "name": "contact-hero",
+      "source": "C:\\Users\\welcome\\.codex\\generated_images\\01a10271-4921-7ba2-8c6d-93f9146322e2\\exec-c44dd7ee-a45a-4ffd-a9ee-5f2cb6505dc6.png",
+      "prompt": "Use case: ads-marketing. Asset type: FENCECRAFT fencing website photograph, landscape 3:2. Primary request: Tidy fencing materials showroom workspace with mesh sample panels, drawings and measuring tools on a workbench, daylight, no text or people. Photorealistic premium commercial photography, realistic accurate wire geometry, clean materials, natural slate and green palette, soft natural light, sharp subject. Constraints: no logos, no text, no watermark."
+    },
+    {
+      "name": "diamond-mesh",
+      "source": "C:\\Users\\welcome\\.codex\\generated_images\\01a10271-4921-7ba2-8c6d-93f9146322e2\\exec-5fc27983-ce05-4c73-a3e8-86b611efaeba.png",
+      "prompt": "Use case: product-mockup. Asset type: FENCECRAFT fencing website photograph, landscape 3:2. Primary request: Silver aluminium expanded diamond mesh sheet with dimensional diamond openings on warm neutral studio surface, detailed metallic edges. Photorealistic premium commercial photography, realistic accurate wire geometry, clean materials, natural slate and green palette, soft natural light, sharp subject. Constraints: no logos, no text, no watermark."
+    },
+    {
+      "name": "concertina",
+      "source": "C:\\Users\\welcome\\.codex\\generated_images\\01a10271-4921-7ba2-8c6d-93f9146322e2\\exec-994b410f-2f18-489d-9e34-c623067ada9a.png",
+      "prompt": "Use case: product-mockup. Asset type: FENCECRAFT fencing website photograph, landscape 3:2. Primary request: Single freestanding galvanized concertina razor wire coil on neutral grey studio floor, clean catalogue photograph, full coil visible. Photorealistic premium commercial photography, realistic accurate wire geometry, clean materials, natural slate and green palette, soft natural light, sharp subject. Constraints: no logos, no text, no watermark."
+    },
+    {
+      "name": "rbt",
+      "source": "C:\\Users\\welcome\\.codex\\generated_images\\01a10271-4921-7ba2-8c6d-93f9146322e2\\exec-dac8a59b-1db8-4305-b85d-61b7ba144dd9.png",
+      "prompt": "Use case: product-mockup. Asset type: FENCECRAFT fencing website photograph, landscape 3:2. Primary request: Close-up galvanized razor barbed tape coil on neutral grey studio floor, clearly visible flat stamped steel blades and connecting wire. Photorealistic premium commercial photography, realistic accurate wire geometry, clean materials, natural slate and green palette, soft natural light, sharp subject. Constraints: no logos, no text, no watermark."
+    },
+    {
+      "name": "chain-link",
+      "source": "C:\\Users\\welcome\\.codex\\generated_images\\01a10271-4921-7ba2-8c6d-93f9146322e2\\exec-6b7ffbfb-c020-4294-8219-168a28e367d8.png",
+      "prompt": "Use case: product-mockup. Asset type: FENCECRAFT fencing website photograph, landscape 3:2. Primary request: Single silver galvanized chain link mesh roll partially unrolled on neutral grey studio floor, accurate woven diamond pattern. Photorealistic premium commercial photography, realistic accurate wire geometry, clean materials, natural slate and green palette, soft natural light, sharp subject. Constraints: no logos, no text, no watermark."
+    },
+    {
+      "name": "barbed-wire",
+      "source": "C:\\Users\\welcome\\.codex\\generated_images\\01a10271-4921-7ba2-8c6d-93f9146322e2\\exec-52f82875-a25f-4f47-b72c-76b1cb8cc7fb.png",
+      "prompt": "Use case: product-mockup. Asset type: FENCECRAFT fencing website photograph, landscape 3:2. Primary request: A tidy coil of double strand galvanized barbed wire on warm grey studio floor with one strand extending towards camera, crisp twisted wire and barbs. Photorealistic premium commercial photography, realistic accurate wire geometry, clean materials, natural slate and green palette, soft natural light, sharp subject. Constraints: no logos, no text, no watermark."
+    },
+    {
+      "name": "mosquito-mesh",
+      "source": "C:\\Users\\welcome\\.codex\\generated_images\\01a10271-4921-7ba2-8c6d-93f9146322e2\\exec-81bb00a1-cf3f-4a32-a619-ee166af727c5.png",
+      "prompt": "Use case: product-mockup. Asset type: FENCECRAFT fencing website photograph, landscape 3:2. Primary request: Fine galvanized square insect screen mesh roll partially unrolled on grey studio surface, tiny evenly woven apertures, detailed macro product photograph. Photorealistic premium commercial photography, realistic accurate wire geometry, clean materials, natural slate and green palette, soft natural light, sharp subject. Constraints: no logos, no text, no watermark."
+    },
+    {
+      "name": "welded-mesh",
+      "source": "C:\\Users\\welcome\\.codex\\generated_images\\01a10271-4921-7ba2-8c6d-93f9146322e2\\exec-cc72c517-a923-45c1-a79c-8e0c89a2e223.png",
+      "prompt": "Use case: product-mockup. Asset type: FENCECRAFT fencing website photograph, landscape 3:2. Primary request: Freestanding galvanized welded steel square grid panels and a partly rolled mesh sheet on neutral studio floor, accurate intersecting welded wires. Photorealistic premium commercial photography, realistic accurate wire geometry, clean materials, natural slate and green palette, soft natural light, sharp subject. Constraints: no logos, no text, no watermark."
+    },
+    {
+      "name": "hexagonal",
+      "source": "C:\\Users\\welcome\\.codex\\generated_images\\01a10271-4921-7ba2-8c6d-93f9146322e2\\exec-04a53386-dd9b-4e93-8b14-e7632d8c7406.png",
+      "prompt": "Use case: product-mockup. Asset type: FENCECRAFT fencing website photograph, landscape 3:2. Primary request: Galvanized hexagonal chicken wire roll partially unrolled on grey studio floor, clearly visible flexible six-sided wire openings. Photorealistic premium commercial photography, realistic accurate wire geometry, clean materials, natural slate and green palette, soft natural light, sharp subject. Constraints: no logos, no text, no watermark."
+    },
+    {
+      "name": "stainless-mosquito",
+      "source": "C:\\Users\\welcome\\.codex\\generated_images\\01a10271-4921-7ba2-8c6d-93f9146322e2\\exec-b9575063-749f-46ac-a68c-127f58079f69.png",
+      "prompt": "Use case: product-mockup. Asset type: FENCECRAFT fencing website photograph, landscape 3:2. Primary request: Fine stainless steel insect screen mesh in a silver aluminium window sample frame on studio surface, tight woven square apertures, brushed silver. Photorealistic premium commercial photography, realistic accurate wire geometry, clean materials, natural slate and green palette, soft natural light, sharp subject. Constraints: no logos, no text, no watermark."
+    },
+    {
+      "name": "stainless-product",
+      "source": "C:\\Users\\welcome\\.codex\\generated_images\\01a10271-4921-7ba2-8c6d-93f9146322e2\\exec-65af75bb-012d-4d3f-b555-525d7c79b5e9.png",
+      "prompt": "Use case: product-mockup. Asset type: FENCECRAFT fencing website photograph, landscape 3:2. Primary request: Stainless steel welded wire mesh panels with accurate square openings, one panel angled to show welded junctions, warm grey studio floor. Photorealistic premium commercial photography, realistic accurate wire geometry, clean materials, natural slate and green palette, soft natural light, sharp subject. Constraints: no logos, no text, no watermark."
+    },
+    {
+      "name": "aluminium-product",
+      "source": "C:\\Users\\welcome\\.codex\\generated_images\\01a10271-4921-7ba2-8c6d-93f9146322e2\\exec-007255e9-1ed9-4092-bc61-872342a6dbb5.png",
+      "prompt": "Use case: product-mockup. Asset type: FENCECRAFT fencing website photograph, landscape 3:2. Primary request: Rolled aluminium fine woven square wire mesh with lightweight silver sheen on warm grey studio floor, crisp fine screen weave. Photorealistic premium commercial photography, realistic accurate wire geometry, clean materials, natural slate and green palette, soft natural light, sharp subject. Constraints: no logos, no text, no watermark."
+    },
+    {
+      "name": "pvc-garden",
+      "source": "C:\\Users\\welcome\\.codex\\generated_images\\01a10271-4921-7ba2-8c6d-93f9146322e2\\exec-48f8cb08-6e44-4dbd-84c4-dbf44b0c8daf.png",
+      "prompt": "Use case: product-mockup. Asset type: FENCECRAFT fencing website photograph, landscape 3:2. Primary request: Green PVC coated hexagonal chicken mesh installed around a raised garden bed, clearly visible hexagonal green wire in foreground, leafy garden. Photorealistic premium commercial photography, realistic accurate wire geometry, clean materials, natural slate and green palette, soft natural light, sharp subject. Constraints: no logos, no text, no watermark."
+    },
+    {
+      "name": "pvc-panel",
+      "source": "C:\\Users\\welcome\\.codex\\generated_images\\01a10271-4921-7ba2-8c6d-93f9146322e2\\exec-205e067f-7d6a-4105-9f58-e7f21aafcc14.png",
+      "prompt": "Use case: product-mockup. Asset type: FENCECRAFT fencing website photograph, landscape 3:2. Primary request: Green PVC coated welded square mesh roll and small panel on neutral studio floor, clear thick smooth green coating. Photorealistic premium commercial photography, realistic accurate wire geometry, clean materials, natural slate and green palette, soft natural light, sharp subject. Constraints: no logos, no text, no watermark."
+    },
+    {
+      "name": "mosquito-net",
+      "source": "C:\\Users\\welcome\\.codex\\generated_images\\01a10271-4921-7ba2-8c6d-93f9146322e2\\exec-05dfa8bd-a980-489c-a449-fe163d571637.png",
+      "prompt": "Use case: product-mockup. Asset type: FENCECRAFT fencing website photograph, landscape 3:2. Primary request: Charcoal fine synthetic mosquito net stretched in a window frame with airy softly lit room behind, fine net texture in sharp focus. Photorealistic premium commercial photography, realistic accurate wire geometry, clean materials, natural slate and green palette, soft natural light, sharp subject. Constraints: no logos, no text, no watermark."
+    },
+    {
+      "name": "shade-net",
+      "source": "C:\\Users\\welcome\\.codex\\generated_images\\01a10271-4921-7ba2-8c6d-93f9146322e2\\exec-5e551361-8e4b-437b-ac2d-48c10169d77a.png",
+      "prompt": "Use case: product-mockup. Asset type: FENCECRAFT fencing website photograph, landscape 3:2. Primary request: Green woven shade net stretched over nursery plants on simple metal supports, dappled sunlight, shade cloth texture clearly visible. Photorealistic premium commercial photography, realistic accurate wire geometry, clean materials, natural slate and green palette, soft natural light, sharp subject. Constraints: no logos, no text, no watermark."
+    },
+    {
+      "name": "bird-net",
+      "source": "C:\\Users\\welcome\\.codex\\generated_images\\01a10271-4921-7ba2-8c6d-93f9146322e2\\exec-41ef01ef-1620-41dc-9501-fca74bef7325.png",
+      "prompt": "Use case: product-mockup. Asset type: FENCECRAFT fencing website photograph, landscape 3:2. Primary request: Fine black bird protection net installed over a sunny apartment balcony, clearly visible thin square netting and unobstructed city view. Photorealistic premium commercial photography, realistic accurate wire geometry, clean materials, natural slate and green palette, soft natural light, sharp subject. Constraints: no logos, no text, no watermark."
+    }
+  ]
+}

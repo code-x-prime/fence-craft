@@ -38,7 +38,7 @@ export function CategoryDetail({ category }: { category: Category }) {
         <div className="wrap">
           <SectionHeading
             eyebrow={`${items.length} products`}
-            lines={['THE', `${category.code} RANGE`]}
+            lines={[`Explore the ${category.code} range.`]}
             size="md"
             split
             description="Select a product for its overview, applications and enquiry options."
@@ -53,7 +53,7 @@ export function CategoryDetail({ category }: { category: Category }) {
 
       <section className="border-t border-line bg-paper-2 section-sm">
         <div className="wrap">
-          <SectionHeading eyebrow="Other categories" lines={['ALSO IN THE RANGE']} size="md" />
+          <SectionHeading eyebrow="Other categories" lines={['More materials to explore.']} size="md" />
           <FadeIn as="ul" group className="mt-12 border-t border-slate/25">
             {others.map((c) => (
               <li key={c.slug}>

@@ -18,8 +18,8 @@ export default function ProductsPage() {
     <main>
       <PageHero
         eyebrow="Products"
-        title={['OUR PRODUCT', 'RANGE']}
-        subtitle="Wire mesh and fencing solutions for diverse requirements."
+        title={['Materials that work.', 'Protection that lasts.']}
+        subtitle="Explore wire mesh, security wire and protective netting across four material families."
         image={siteImages.productsHero}
         breadcrumb={[{ label: 'Home', href: '/' }, { label: 'Products' }]}
       />
@@ -28,7 +28,7 @@ export default function ProductsPage() {
         <div className="wrap">
           <SectionHeading
             eyebrow="Four families"
-            lines={['RELIABLE MATERIALS', 'FOR EVERY BOUNDARY']}
+            lines={['Four materials.', 'Every kind of boundary.']}
             size="md"
             split
             description="Reliable materials for security, construction, industrial and general fencing applications."

@@ -39,11 +39,11 @@ export function ProductDetail({ product }: { product: Product }) {
       <section className="bg-paper section-y">
         <div className="wrap grid gap-10 lg:grid-cols-12 lg:gap-14">
           <div className="lg:col-span-6">
-            <SectionHeading eyebrow="Overview" lines={['ABOUT THIS', 'PRODUCT']} size="md" />
+            <SectionHeading eyebrow="Overview" lines={['A closer look.']} size="md" />
             <FadeIn group className="mt-10 max-w-xl space-y-5">
               <p className="text-xl font-semibold leading-snug text-ink md:text-2xl">{product.description}</p>
               <p className="text-base leading-relaxed text-ink/70">
-                Contact us for specifications and availability.
+                Share your required mesh opening, wire size, quantity and delivery location. Our team can confirm available specifications and help you choose a suitable option for your application.
               </p>
             </FadeIn>
 
@@ -68,7 +68,7 @@ export function ProductDetail({ product }: { product: Product }) {
           </div>
 
           <div className="lg:col-span-6">
-            <SectionHeading eyebrow="Applications" lines={['WHERE IT', 'IS USED']} size="md" />
+            <SectionHeading eyebrow="Applications" lines={['Where it works.']} size="md" />
             <FadeIn as="ol" group className="mt-10 border-t border-slate/25">
               {product.applications.map((a, i) => (
                 <li key={a} className="flex items-baseline gap-6 border-b border-line py-5">
@@ -85,7 +85,7 @@ export function ProductDetail({ product }: { product: Product }) {
         <div className="wrap">
           <SectionHeading
             eyebrow="Related products"
-            lines={['MORE FROM', 'THE RANGE']}
+            lines={['Complete your', 'requirement.']}
             size="md"
             split
             description="Other products that are commonly specified alongside this one."
@@ -99,7 +99,7 @@ export function ProductDetail({ product }: { product: Product }) {
       </section>
 
       <CTASection
-        lines={['SPECIFICATIONS', '& AVAILABILITY?']}
+        lines={['Find your', 'specification.']}
         text={`Contact us for specifications and availability on ${product.name}.`}
         primary={{ label: 'Get a Quote', href: enquire }}
         secondary={{ label: 'WhatsApp Us', href: site.whatsappHref }}

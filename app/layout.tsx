@@ -1,6 +1,6 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
-import { Manrope, Space_Grotesk } from 'next/font/google'
+import localFont from 'next/font/local'
 import { CursorFollower } from '@/components/animations/CursorFollower'
 import { Footer } from '@/components/footer'
 import { Header } from '@/components/header'
@@ -9,15 +9,14 @@ import { site } from '@/lib/site'
 import { siteImages } from '@/lib/site-images'
 import './globals.css'
 
-const grotesk = Space_Grotesk({
-  subsets: ['latin'],
-  variable: '--font-grotesk',
-  display: 'swap',
-})
-
-const manrope = Manrope({
-  subsets: ['latin'],
-  variable: '--font-manrope',
+const poppins = localFont({
+  src: [
+    { path: '../public/fonts/Poppins-Regular.ttf', weight: '400', style: 'normal' },
+    { path: '../public/fonts/Poppins-Medium.ttf', weight: '500', style: 'normal' },
+    { path: '../public/fonts/Poppins-SemiBold.ttf', weight: '600', style: 'normal' },
+    { path: '../public/fonts/Poppins-Bold.ttf', weight: '700', style: 'normal' },
+  ],
+  variable: '--font-poppins',
   display: 'swap',
 })
 
@@ -32,7 +31,7 @@ export const metadata: Metadata = {
     description: 'Wire mesh, fencing products and complete fencing solutions from Delhi.',
     type: 'website',
     siteName: 'FENCECRAFT',
-    images: [{ url: siteImages.hero.src, width: 2200, height: 1461, alt: siteImages.hero.alt }],
+    images: [{ url: siteImages.hero.src, width: 1536, height: 1024, alt: siteImages.hero.alt }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -41,7 +40,7 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: '/fav-fc.png',
-    apple: '/apple-icon.png',
+    apple: '/fav-fc.png',
   },
 }
 
@@ -70,20 +69,13 @@ const organization = {
   contactPoint: [{ '@type': 'ContactPoint', telephone: '+91 9811812122', contactType: 'sales', areaServed: 'IN' }],
 }
 
-// Adds `anim` + `motion` (or `reduce`) before first paint so reveal targets start
-// hidden without a flash. Reduced-motion users get simple fades only.
-const motionGate = `try{var d=document.documentElement;d.classList.add('anim',matchMedia('(prefers-reduced-motion: reduce)').matches?'reduce':'motion')}catch(e){}`
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${manrope.variable} ${grotesk.variable}`} suppressHydrationWarning>
-      <head>
-        <script dangerouslySetInnerHTML={{ __html: motionGate }} />
-      </head>
+    <html lang="en" className={poppins.variable}>
       <body className="antialiased">
         <script
           type="application/ld+json"

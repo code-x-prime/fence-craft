@@ -45,7 +45,7 @@ export function ProductCategory({
         <RevealText
           as="h3"
           lines={[`${category.code} — ${category.name}`.replace('PVC — PVC', 'PVC')]}
-          className="mt-5 h-sub font-extrabold uppercase leading-[1.05] tracking-tight text-slate"
+          className="mt-5 h-sub font-bold leading-[1.15] tracking-tight text-slate"
         />
         <FadeIn>
           <p className="mt-3 max-w-md text-[15px] leading-relaxed text-muted">{category.description}</p>
@@ -57,7 +57,7 @@ export function ProductCategory({
               <li key={p.slug}>
                 <Link
                   href={`/products/${p.slug}`}
-                  className="group/row flex items-center justify-between gap-4 border-b border-line py-3 text-ink transition-[padding,color] duration-300 hover:pl-2 hover:text-teal"
+                  className="group/row flex flex-wrap items-center justify-between gap-2 border-b border-line py-3 text-ink transition-[padding,color] duration-300 hover:pl-2 hover:text-teal"
                 >
                   <span className="flex items-center gap-3 text-[15px] font-semibold">
                     <span aria-hidden className="block h-px w-0 bg-teal transition-[width] duration-300 group-hover/row:w-4" />

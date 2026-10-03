@@ -18,9 +18,9 @@ export default function SolutionsPage() {
     <main>
       <PageHero
         eyebrow="Solutions"
-        title={['FENCING FOR', 'REAL-WORLD', 'APPLICATIONS']}
+        title={['The right fence.', 'For your space.']}
         size="md"
-        subtitle="Fencing solutions for real-world applications."
+        subtitle="From factory perimeters to garden boundaries, explore fencing and netting by application."
         image={siteImages.solutionsHero}
         breadcrumb={[{ label: 'Home', href: '/' }, { label: 'Solutions' }]}
       />
@@ -29,7 +29,7 @@ export default function SolutionsPage() {
         <div className="wrap">
           <SectionHeading
             eyebrow="Six applications"
-            lines={['FENCING FOR EVERY', 'REQUIREMENT']}
+            lines={['Start with', 'your application.']}
             size="md"
             split
             description="A practical guide to where each type of fencing is commonly used, with the products that suit it."

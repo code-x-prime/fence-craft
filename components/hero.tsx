@@ -74,7 +74,7 @@ export function Hero() {
       id="top"
       ref={root}
       aria-label="FENCECRAFT, engineered to protect"
-      className="relative isolate flex h-[80svh] max-h-[900px] min-h-[540px] items-center overflow-hidden bg-deeper text-white md:h-[92svh] lg:h-[100svh] lg:max-h-[960px]"
+      className="relative isolate flex min-h-[640px] items-center overflow-hidden bg-deeper text-white sm:min-h-[720px] lg:h-[92svh] lg:max-h-[960px]"
     >
       <div data-h-scroll className="absolute inset-0 will-change-transform">
         <div data-h-mouse className="absolute -inset-[4%]">
@@ -83,7 +83,7 @@ export function Hero() {
               src={img.src}
               alt={img.alt}
               fill
-              priority
+              preload
               sizes="100vw"
               className={`object-cover ${img.position ?? ''}`}
             />
@@ -124,7 +124,7 @@ export function Hero() {
           </h1>
 
           <p data-h-cta data-h-fade className="mt-6 max-w-md text-base leading-relaxed text-white/75 md:text-lg">
-            Wire mesh and fencing solutions built around quality, reliability and dependable supply.
+            Wire mesh, security fencing and protective netting for factories, farms, homes and everything in between. Supplied from Delhi, across India.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">

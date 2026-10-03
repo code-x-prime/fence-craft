@@ -34,7 +34,7 @@ export function SolutionBlock({ solution, index }: { solution: Solution; index: 
         </FadeIn>
         <RevealText
           as="h2"
-          lines={[solution.title.toUpperCase()]}
+          lines={[solution.title]}
           className="mt-5 h-sub font-extrabold leading-[1.02] tracking-tight text-slate"
         />
         <FadeIn>
