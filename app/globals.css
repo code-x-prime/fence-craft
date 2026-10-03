@@ -2,7 +2,8 @@
 @import "tw-animate-css";
 
 @theme inline {
-  --font-grotesk: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
+  --font-grotesk: var(--font-archivo), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-archivo), ui-sans-serif, system-ui, sans-serif;
   --font-sans: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
 
   /* Brand — sampled from the FENCECRAFT logo */
@@ -115,7 +116,7 @@ body {
   font-size: clamp(1.75rem, 0.9rem + 2.9vw, 3rem);
 }
 .h-statement {
-  font-size: clamp(2.25rem, 1rem + 5.4vw, 5.5rem);
+  font-size: clamp(2.25rem, 1rem + 4.8vw, 4.75rem);
 }
 .h-sub {
   font-size: clamp(1.5rem, 1rem + 1.8vw, 2.5rem);
@@ -141,9 +142,10 @@ body {
 }
 
 .display {
-  font-weight: 700;
-  letter-spacing: -0.045em;
-  line-height: 1.12;
+  font-family: var(--font-heading);
+  font-weight: 650;
+  letter-spacing: -0.025em;
+  line-height: 1.08;
   text-wrap: balance;
 }
 
@@ -333,9 +335,13 @@ html.motion [data-h-line] {
 }
 
 /* Consistent readable typography across every shared section and detail page. */
-h1, h2, h3, h4 { font-family: var(--font-poppins), sans-serif; }
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  font-variation-settings: 'wdth' 100;
+}
 h1, h2, h3, p, dd, li { overflow-wrap: anywhere; }
-h1.display, h2.display, h3 { line-height: 1.14; }
+h1.display, h2.display { font-weight: 650; line-height: 1.08; }
+h3, h4 { font-weight: 600; line-height: 1.18; }
 .font-extrabold { font-weight: 700; }
 main p { text-wrap: pretty; }
 main .text-sm { font-size: .9375rem; }
@@ -347,7 +353,7 @@ main .text-sm { font-size: .9375rem; }
   .h-statement { font-size: clamp(2rem, 8.2vw, 3rem); }
   .eyebrow { font-size: 10px; letter-spacing: .12em; }
   .btn { width: 100%; padding-inline: 16px; }
-  h1.display, h2.display { letter-spacing: -.035em; }
+  h1.display, h2.display { letter-spacing: -.02em; }
 }
 
 

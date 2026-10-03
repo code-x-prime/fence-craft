@@ -9,6 +9,14 @@ import { site } from '@/lib/site'
 import { siteImages } from '@/lib/site-images'
 import './globals.css'
 
+const archivo = localFont({
+  src: '../public/fonts/Archivo-Variable.ttf',
+  weight: '100 900',
+  style: 'normal',
+  variable: '--font-archivo',
+  display: 'swap',
+})
+
 const poppins = localFont({
   src: [
     { path: '../public/fonts/Poppins-Regular.ttf', weight: '400', style: 'normal' },
@@ -75,7 +83,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={poppins.variable}>
+    <html lang="en" className={`${poppins.variable} ${archivo.variable}`}>
       <body className="antialiased">
         <script
           type="application/ld+json"
