@@ -79,6 +79,12 @@ export function Footer() {
         <div className="wrap flex flex-col gap-2 py-6 text-xs text-white/50 sm:flex-row sm:justify-between">
           <p>© 2026 FENCECRAFT. All rights reserved.</p>
           <p>A brand by {site.parent}.</p>
+          <p>
+            Designed by{' '}
+            <a href="https://groxmedia.in/" target="_blank" rel="noopener noreferrer" className={link}>
+              Grox Media
+            </a>
+          </p>
         </div>
       </div>
     </footer>
