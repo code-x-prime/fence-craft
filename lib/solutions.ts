@@ -38,10 +38,10 @@ export const solutions: Solution[] = [
   {
     number: '04',
     title: 'Agricultural & Farm',
-    text: 'Create practical farm boundaries and poultry enclosures, or protect growing areas with bird and shade netting. Match the mesh opening and material to the animals, crops and area involved.',
+    text: 'Create practical farm boundaries and poultry enclosures, or protect growing areas with shade netting. Match the mesh opening and material to the animals, crops and area involved.',
     image: siteImages.agricultural.src,
     alt: siteImages.agricultural.alt,
-    products: ['hexagonal-chicken-wire-mesh', 'barbed-wire', 'bird-net', 'shade-net'],
+    products: ['hexagonal-chicken-wire-mesh', 'barbed-wire', 'shade-net'],
   },
   {
     number: '05',

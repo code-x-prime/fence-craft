@@ -18,12 +18,12 @@ import { siteImages } from '@/lib/site-images'
 export const metadata: Metadata = {
   title: 'About FENCECRAFT | Wire Mesh & Fencing Company',
   description:
-    'Established in 2016, FENCECRAFT is a trusted and growing brand specializing in wire mesh, fencing products and complete fencing solutions, backed by S.B. ENTERPRISES in Delhi.',
+    'Established in 2016, FENCECRAFT is a trusted and growing brand specializing in wire mesh, fencing products and complete fencing solutions, backed by S.B. ENTERPRISES in Delhi NCR, supplying Pan India.',
   alternates: { canonical: '/about' },
 }
 
 export default function AboutPage() {
-  const est = siteImages.about
+  const est = siteImages.established
   return (
     <main>
       <PageHero
@@ -50,14 +50,14 @@ export default function AboutPage() {
               <FadeIn>
                 <p className="text-xl font-semibold leading-snug text-ink md:text-2xl">
                   Since 2016, FENCECRAFT has brought wire mesh, security fencing and protective netting together
-                  in one practical range. Based in Delhi, we help customers choose products around the space they need to protect.
+                  in one practical range. Based in Delhi NCR and supplying Pan India, we help customers choose products around the space they need to protect.
                 </p>
               </FadeIn>
               <FadeIn as="dl" group className="border-t border-slate/25">
                 {[
                   ['Established', '2016'],
                   ['Brand backing', 'S.B. ENTERPRISES'],
-                  ['Manufacturing / supply base', 'DELHI'],
+                  ['Manufacturing / supply base', 'DELHI NCR'],
                 ].map(([label, value]) => (
                   <div key={label} className="flex items-baseline justify-between gap-6 border-b border-line py-4">
                     <dt className="text-[11px] font-bold uppercase tracking-[0.16em] text-muted">{label}</dt>
@@ -89,7 +89,7 @@ export default function AboutPage() {
         lines={['Built around', 'your requirements.']}
         paragraphs={[
           'Every requirement starts with the application: a factory boundary, a farm enclosure, a garden or a window screen. We help you narrow down the material and mesh type before discussing specifications and quantity.',
-          'Our range includes welded and chain link mesh, hexagonal netting, PVC-coated products, barbed wire and concertina coils. FENCECRAFT is backed by S.B. ENTERPRISES in Delhi.',
+          'Our range includes welded and chain link mesh, hexagonal netting, PVC-coated products, barbed wire and concertina coils. FENCECRAFT is backed by S.B. ENTERPRISES in Delhi NCR, supplying Pan India.',
         ]}
         image={siteImages.industrial}
       >

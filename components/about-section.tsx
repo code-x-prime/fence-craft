@@ -10,7 +10,7 @@ import { aboutSteps } from '@/lib/site'
 const facts = [
   { big: '2016', label: 'Established' },
   { big: 'S.B. ENTERPRISES', label: 'Brand backing' },
-  { big: 'DELHI', label: 'Manufacturing / Supply base' },
+  { big: 'DELHI NCR', label: 'Manufacturing / Supply base' },
 ]
 
 /** About: one large image beside the story, then a text-only band. */
@@ -49,7 +49,7 @@ export function AboutSection() {
                 From a simple garden enclosure to an industrial boundary, the right fencing starts with the right material.
               </p>
               <p className="text-sm leading-relaxed text-ink/70 md:text-base">
-                Established in 2016 and backed by S.B. ENTERPRISES in Delhi, FENCECRAFT manufactures and supplies
+                Established in 2016 and backed by S.B. ENTERPRISES in Delhi NCR, FENCECRAFT manufactures and supplies
                 wire mesh, security fencing and protective netting. Explore the range, compare applications and talk to us about your project.
               </p>
             </FadeIn>

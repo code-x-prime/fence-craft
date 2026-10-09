@@ -71,7 +71,7 @@ export const categories: Category[] = [
     code: 'PVC',
     name: 'PVC Coated / Plastic Mesh',
     footerLabel: 'PVC / Plastic Mesh',
-    description: 'Green coated wire mesh and practical protective netting for gardens, balconies and growing areas. Find garden mesh, insect screens, shade net and bird net in one range.',
+    description: 'Green coated wire mesh and practical protective netting for gardens, balconies and growing areas. Find garden mesh, insect screens, fibre glass mesh and shade net in one range.',
     image: siteImages.pvc.src,
     alt: siteImages.pvc.alt,
   },
@@ -256,6 +256,15 @@ export const products: Product[] = [
     applications: ['Windows and doors', 'Ventilation openings', 'Frames and enclosures'],
   },
   {
+    slug: 'fibre-glass-mesh',
+    name: 'Fibre Glass Mesh',
+    category: 'pvc-plastic-mesh',
+    description: 'Fine fibre glass mesh for insect screening in doors, windows and ventilation frames. Share your frame size and requirement to confirm the suitable mesh; specifications are available on enquiry.',
+    image: siteImages.fibreGlass.src,
+    alt: siteImages.fibreGlass.alt,
+    applications: ['Windows and doors', 'Ventilation openings', 'Frames and enclosures'],
+  },
+  {
     slug: 'shade-net',
     name: 'Shade Net / Green Net',
     category: 'pvc-plastic-mesh',
@@ -263,15 +272,6 @@ export const products: Product[] = [
     image: siteImages.shadeNet.src,
     alt: siteImages.shadeNet.alt,
     applications: ['Agriculture and nurseries', 'Gardens and outdoor areas', 'Site screening and shading'],
-  },
-  {
-    slug: 'bird-net',
-    name: 'Bird Net',
-    category: 'pvc-plastic-mesh',
-    description: 'Lightweight protective netting for balconies, terraces, orchards and growing areas. Define the area and opening size you need to cover, then confirm the net and installation requirements with our team.',
-    image: siteImages.birdNet.src,
-    alt: siteImages.birdNet.alt,
-    applications: ['Orchards and crops', 'Terraces and balconies', 'Storage and open spaces'],
   },
 ]
 
