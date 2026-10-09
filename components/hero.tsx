@@ -74,16 +74,18 @@ export function Hero() {
       id="top"
       ref={root}
       aria-label="FENCECRAFT, engineered to protect"
-      className="relative isolate flex min-h-[640px] items-center overflow-hidden bg-deeper text-white sm:min-h-[720px] lg:h-[92svh] lg:max-h-[960px]"
+      className="relative isolate flex min-h-[100svh] flex-col overflow-hidden bg-deeper text-white"
     >
+      {/* full-bleed photograph, no mask: sharp and clear */}
       <div data-h-scroll className="absolute inset-0 will-change-transform">
-        <div data-h-mouse className="absolute -inset-[4%]">
-          <div data-h-intro className="hero-mask absolute inset-0">
+        <div data-h-mouse className="absolute -inset-[3%]">
+          <div data-h-intro className="absolute inset-0">
             <Image
               src={img.src}
               alt={img.alt}
               fill
               preload
+              quality={90}
               sizes="100vw"
               className={`object-cover ${img.position ?? ''}`}
             />
@@ -91,15 +93,25 @@ export function Hero() {
         </div>
       </div>
 
+      {/* legibility: dark from the left and bottom, photo stays bright on the right */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(15,26,32,0.88)_0%,rgba(15,26,32,0.55)_45%,rgba(15,26,32,0.05)_100%)] max-md:bg-[linear-gradient(180deg,rgba(15,26,32,0.55)_0%,rgba(15,26,32,0.78)_100%)]"
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-deeper/90 to-transparent"
+      />
+
       <div data-h-veil aria-hidden className="pointer-events-none absolute inset-0 z-20 bg-paper opacity-0" />
 
-      <div className="wrap relative z-10 pb-10 pt-24">
-        <div data-h-content className="max-w-[44rem]">
+      <div className="wrap relative z-10 flex flex-1 items-center pb-10 pt-28 md:pt-32">
+        <div data-h-content className="max-w-[56rem]">
           <p data-h-label data-h-fade className="eyebrow text-teal-soft">
             Est. 2016 · S.B. Enterprises
           </p>
 
-          <h1 className="display mt-5 leading-[0.92]">
+          <h1 className="display mt-6 leading-[0.9]">
             <RevealText
               as="span"
               lines={['ENGINEERED TO']}
@@ -108,7 +120,7 @@ export function Hero() {
               delay={0.6}
               duration={1.2}
               stagger={0.04}
-              className="block text-[clamp(1.5rem,0.7rem+3.6vw,3rem)] text-white/90"
+              className="block text-[clamp(1.75rem,0.8rem+4.4vw,4rem)] text-white/90"
             />
             <RevealText
               as="span"
@@ -119,27 +131,43 @@ export function Hero() {
               delay={0.85}
               duration={1.4}
               stagger={0.06}
-              className="mt-1 block text-[clamp(3rem,1rem+9.2vw,7.5rem)] text-white"
+              className="mt-2 block text-[clamp(3.75rem,1rem+14vw,11.5rem)] text-white"
             />
           </h1>
 
-          <p data-h-cta data-h-fade className="mt-6 max-w-md text-base leading-relaxed text-white/75 md:text-lg">
-            Wire mesh, security fencing and protective netting for factories, farms, homes and everything in between. Supplied from Delhi, across India.
+          <p data-h-cta data-h-fade className="mt-8 max-w-xl text-base leading-relaxed text-white/80 md:text-xl">
+            Wire mesh, security fencing and protective netting for factories, farms, homes and everything in between.
           </p>
 
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+          <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <span data-h-cta data-h-fade className="flex">
-              <BrandButton href="/products" variant="primary" className="flex-1">
+              <BrandButton href="/products" variant="primary" className="flex-1 sm:min-h-14 sm:px-8">
                 Explore Products
               </BrandButton>
             </span>
             <span data-h-cta data-h-fade className="flex">
-              <BrandButton href="/contact" variant="outline-light" className="flex-1">
+              <BrandButton href="/contact" variant="outline-light" className="flex-1 sm:min-h-14 sm:px-8">
                 Get a Quote
               </BrandButton>
             </span>
           </div>
         </div>
+      </div>
+
+      {/* facts bar: company details only, nothing invented */}
+      <div data-h-cta data-h-fade className="relative z-10 border-t border-white/15 bg-deeper/55 backdrop-blur-sm">
+        <dl className="wrap grid grid-cols-3 divide-x divide-white/15 max-lg:pb-[4.75rem]">
+          {[
+            ['2016', 'Established'],
+            ['Delhi NCR', 'Based'],
+            ['Pan India', 'Supply'],
+          ].map(([v, l]) => (
+            <div key={l} className="px-3 py-4 first:pl-0 sm:px-6 sm:py-5">
+              <dt className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/55 sm:text-[11px]">{l}</dt>
+              <dd className="mt-1 text-base font-extrabold tracking-tight text-white sm:text-xl md:text-2xl">{v}</dd>
+            </div>
+          ))}
+        </dl>
       </div>
     </section>
   )
