@@ -3,7 +3,7 @@ export type SiteImage = { src: string; alt: string; position?: string }
 const img = (file: string, alt: string, position?: string): SiteImage => ({ src: `/images/generated/${file}.webp`, alt, position })
 export const siteImages = {
   hero: img("hero-chain-link", "Galvanized chain link fence in sharp focus against a clear blue sky", "object-[60%_50%]"),
-  about: img("doc-chain-link-fence", "Galvanized chain link fence with a steel post running along the edge of a waterfront"),
+  about: img("about-chain-link-sea", "Galvanized chain link fence in sharp focus with calm sea behind"),
   established: img("doc-concertina-coil", "Coils of concertina razor wire mounted on a green mesh security fence against a clear sky"),
   galvanized: img("doc-concertina-coil", "Coils of concertina razor wire mounted on a green mesh security fence against a clear sky"),
   stainlessSteel: img("stainless", "Stainless steel welded square wire mesh sheet leaning against warm grey studio backdrop"),
