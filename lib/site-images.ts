@@ -2,7 +2,7 @@
 export type SiteImage = { src: string; alt: string; position?: string }
 const img = (file: string, alt: string, position?: string): SiteImage => ({ src: `/images/generated/${file}.webp`, alt, position })
 export const siteImages = {
-  hero: img("hero", "A premium industrial warehouse perimeter with perfectly installed charcoal welded steel mesh fence receding to the right", "object-[60%_50%]"),
+  hero: img("hero-chain-link", "Galvanized chain link fence in sharp focus against a clear blue sky", "object-[60%_50%]"),
   about: img("doc-chain-link-fence", "Galvanized chain link fence with a steel post running along the edge of a waterfront"),
   established: img("doc-concertina-coil", "Coils of concertina razor wire mounted on a green mesh security fence against a clear sky"),
   galvanized: img("doc-concertina-coil", "Coils of concertina razor wire mounted on a green mesh security fence against a clear sky"),
@@ -35,5 +35,5 @@ export const siteImages = {
   pvcWire: img("pvc-panel", "Green PVC coated welded square mesh roll and small panel on neutral studio floor"),
   mosquitoNet: img("mosquito-net", "Charcoal fine synthetic mosquito net stretched in a window frame with airy softly lit room behind"),
   shadeNet: img("shade-net", "Green woven shade net stretched over nursery plants on simple metal supports"),
-  fibreGlass: img("mosquito-net", "Fine fibre glass insect screen mesh stretched in a window frame"),
+  fibreGlass: img("fibre-glass-mesh", "Close-up of woven fibre glass mesh screen with a fine square weave"),
 } as const
