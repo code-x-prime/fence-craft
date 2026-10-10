@@ -18,6 +18,8 @@ type Props = {
   image: { src: string; alt: string; position?: string }
   breadcrumb: Crumb[]
   size?: 'lg' | 'md'
+  /** Light layout for product shots on white: light ground, dark text, image kept clear on the right. */
+  light?: boolean
   children?: ReactNode
 }
 
@@ -26,7 +28,7 @@ type Props = {
  * photograph (clip-path reveal + parallax), drawn mesh lines, breadcrumb and
  * line-by-line title reveal. Content is passed in; the design never varies.
  */
-export function PageHero({ eyebrow, title, subtitle, description, image, breadcrumb, size = 'lg', children }: Props) {
+export function PageHero({ eyebrow, title, subtitle, description, image, breadcrumb, size = 'lg', light = false, children }: Props) {
   const root = useRef<HTMLElement>(null)
 
   useEffect(() => {
@@ -44,13 +46,16 @@ export function PageHero({ eyebrow, title, subtitle, description, image, breadcr
         0,
       )
         .fromTo(q('[data-ph-in]'), { scale: 1.06 }, { scale: 1, duration: 2.2 }, 0)
-        .fromTo(
-          q('[data-ph-line]'),
+        .fromTo(q('[data-ph-fade]'), { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 1, stagger: 0.12 }, 0.6)
+      const lines = q('[data-ph-line]')
+      if (lines.length) {
+        tl.fromTo(
+          lines,
           { strokeDashoffset: 1 },
           { strokeDashoffset: 0, duration: 2.2, stagger: 0.08, ease: 'power2.inOut' },
           0.3,
         )
-        .fromTo(q('[data-ph-fade]'), { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 1, stagger: 0.12 }, 0.6)
+      }
     })
     // scroll-linked drift: tablet and up only
     mm.add(DESKTOP_MOTION, () => {
@@ -76,11 +81,18 @@ export function PageHero({ eyebrow, title, subtitle, description, image, breadcr
   return (
     <section
       ref={root}
-      className="relative isolate flex min-h-[480px] items-end overflow-hidden bg-deeper text-white sm:min-h-[520px] lg:min-h-[68svh]"
+      className={`relative isolate flex min-h-[480px] items-end overflow-hidden sm:min-h-[520px] lg:min-h-[68svh] ${
+        light ? 'bg-white text-ink' : 'bg-deeper text-white'
+      }`}
     >
       {/* photograph, blended into the dark ground */}
-      <div data-ph-scroll className="absolute inset-0 will-change-transform">
-        <div data-ph-img className="hero-mask absolute inset-0">
+      <div
+        data-ph-scroll
+        className={`absolute will-change-transform ${
+          light ? 'inset-y-0 right-0 w-full opacity-40 lg:w-[58%] lg:opacity-100' : 'inset-0'
+        }`}
+      >
+        <div data-ph-img className={`absolute inset-0 ${light ? '[mask-image:linear-gradient(90deg,transparent_0%,#000_30%)]' : 'hero-mask'}`}>
           <div data-ph-in className="absolute inset-0">
             <Image
               src={image.src}
@@ -90,11 +102,12 @@ export function PageHero({ eyebrow, title, subtitle, description, image, breadcr
               sizes="100vw"
               className={`object-cover ${image.position ?? 'object-center'}`}
             />
-            <div aria-hidden className="absolute inset-0 bg-deeper/35" />
+            {!light && <div aria-hidden className="absolute inset-0 bg-deeper/35" />}
           </div>
         </div>
       </div>
 
+      {!light && (
       <svg
         aria-hidden
         viewBox="0 0 1440 960"
@@ -107,13 +120,14 @@ export function PageHero({ eyebrow, title, subtitle, description, image, breadcr
           ))}
         </g>
       </svg>
-      <div aria-hidden className="grid-bg pointer-events-none absolute inset-0 text-white/[0.035]" />
+      )}
+      {!light && <div aria-hidden className="grid-bg pointer-events-none absolute inset-0 text-white/[0.035]" />}
 
       <div data-ph-content className="wrap relative z-10 w-full pb-10 pt-28 md:pb-12 lg:pb-14 lg:pt-32">
         <div data-ph-fade>
-          <Breadcrumb items={breadcrumb} />
+          <Breadcrumb items={breadcrumb} tone={light ? 'light' : 'dark'} />
         </div>
-        <p data-ph-fade className="eyebrow mt-6 text-teal-soft sm:mt-8">
+        <p data-ph-fade className={`eyebrow mt-6 sm:mt-8 ${light ? 'text-teal' : 'text-teal-soft'}`}>
           {eyebrow}
         </p>
         <RevealText
@@ -125,12 +139,12 @@ export function PageHero({ eyebrow, title, subtitle, description, image, breadcr
           className={`display mt-4 leading-[0.98] sm:mt-5 ${titleSize}`}
         />
         {subtitle && (
-          <p data-ph-fade className="mt-5 max-w-2xl text-base font-semibold leading-snug text-white sm:text-lg md:text-xl">
+          <p data-ph-fade className={`mt-5 max-w-2xl text-base font-semibold leading-snug sm:text-lg md:text-xl ${light ? 'text-ink' : 'text-white'}`}>
             {subtitle}
           </p>
         )}
         {description && (
-          <p data-ph-fade className="mt-3 max-w-xl text-sm leading-relaxed text-white/65 sm:text-base">
+          <p data-ph-fade className={`mt-3 max-w-xl text-sm leading-relaxed sm:text-base ${light ? 'text-ink/70' : 'text-white/65'}`}>
             {description}
           </p>
         )}

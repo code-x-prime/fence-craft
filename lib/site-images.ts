@@ -2,7 +2,7 @@
 export type SiteImage = { src: string; alt: string; position?: string }
 const img = (file: string, alt: string, position?: string): SiteImage => ({ src: `/images/generated/${file}.webp`, alt, position })
 export const siteImages = {
-  hero: img("hero-chain-link", "Galvanized chain link fence in sharp focus against a clear blue sky", "object-[60%_50%]"),
+  hero: img("hero-chain-link-4k", "Galvanized chain link fence with top rail in sharp focus against a clear blue sky", "object-[60%_50%]"),
   about: img("hd-chain-link-water", "Galvanized chain link fence with a steel post running along calm blue water"),
   established: img("hd-concertina", "Concertina razor wire on a green mesh security fence under a blue sky"),
   galvanized: img("hd-concertina", "Concertina razor wire on a green mesh security fence under a blue sky"),
@@ -31,9 +31,9 @@ export const siteImages = {
   stainlessProduct: img("stainless-product", "Stainless steel welded wire mesh panels with accurate square openings"),
   aluminiumProduct: img("aluminium-product", "Rolled aluminium fine woven square wire mesh with lightweight silver sheen on warm grey studio floor"),
   diamondBarfi: img("diamond-mesh", "Silver aluminium expanded diamond mesh sheet with dimensional diamond openings on warm neutral studio surface"),
-  pvcGarden: img("pvc-garden", "Green PVC coated hexagonal chicken mesh installed around a raised garden bed"),
+  pvcGarden: img("pvc-garden-fence-installed", "Dark green PVC coated hexagonal mesh fence on wooden posts around a vegetable garden bed"),
   pvcWire: img("pvc-panel", "Green PVC coated welded square mesh roll and small panel on neutral studio floor"),
   mosquitoNet: img("mosquito-net", "Charcoal fine synthetic mosquito net stretched in a window frame with airy softly lit room behind"),
   shadeNet: img("shade-net", "Green woven shade net stretched over nursery plants on simple metal supports"),
-  fibreGlass: img("fibre-glass-mesh", "Close-up of woven fibre glass mesh screen with a fine square weave"),
+  fibreGlass: img("fibre-glass-waterproofing", "White glass fibre mesh embedded in grey waterproofing coating on a concrete roof terrace, with a roller and coating tub"),
 } as const

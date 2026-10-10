@@ -21,6 +21,7 @@ export function ProductDetail({ product }: { product: Product }) {
         title={titleLines(product.name, 16)}
         description={product.description}
         image={{ src: product.image, alt: product.alt }}
+        light={product.lightImage}
         breadcrumb={[
           { label: 'Home', href: '/' },
           { label: 'Products', href: '/products' },
@@ -31,7 +32,7 @@ export function ProductDetail({ product }: { product: Product }) {
         <BrandButton href={enquire} variant="primary">
           Get a Quote
         </BrandButton>
-        <BrandButton href={`/products/${category.slug}`} variant="outline-light">
+        <BrandButton href={`/products/${category.slug}`} variant={product.lightImage ? 'secondary' : 'outline-light'}>
           View {category.code} Range
         </BrandButton>
       </PageHero>

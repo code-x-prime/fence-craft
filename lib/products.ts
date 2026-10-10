@@ -31,6 +31,8 @@ export type Product = {
   applications: string[]
   /** Only where supplied by the company, e.g. stainless grades. */
   note?: string
+  /** Product shot on a light/white ground: the page hero switches to its light layout. */
+  lightImage?: boolean
 }
 
 export const categories: Category[] = [
@@ -71,7 +73,7 @@ export const categories: Category[] = [
     code: 'PVC',
     name: 'PVC Coated / Plastic Mesh',
     footerLabel: 'PVC / Plastic Mesh',
-    description: 'Green coated wire mesh and practical protective netting for gardens, balconies and growing areas. Find garden mesh, insect screens, woven glass fibre mesh and shade net in one range.',
+    description: 'Green coated wire mesh and practical protective netting for gardens, balconies and growing areas. Find garden mesh, insect screens, glass fibre mesh for waterproofing and shade net in one range.',
     image: siteImages.pvc.src,
     alt: siteImages.pvc.alt,
   },
@@ -230,6 +232,7 @@ export const products: Product[] = [
     description: 'Hexagonal wire mesh with a green PVC coating for garden boundaries, plant protection and light animal enclosures. Its flexible pattern works around posts, beds and shaped garden areas.',
     image: siteImages.pvcGarden.src,
     alt: siteImages.pvcGarden.alt,
+    lightImage: true,
     applications: [
       'Garden fencing',
       'Plant supports and protection',
@@ -259,10 +262,11 @@ export const products: Product[] = [
     slug: 'woven-mesh-glass-fibre',
     name: 'Woven Mesh / Glass Fibre',
     category: 'pvc-plastic-mesh',
-    description: 'Woven glass fibre mesh for insect screening in doors, windows and ventilation frames. Share your frame size and requirement to confirm the suitable mesh; specifications are available on enquiry.',
+    description: 'Woven glass fibre mesh used as reinforcement in waterproofing work. Share your application and quantity to confirm the suitable mesh; specifications are available on enquiry.',
     image: siteImages.fibreGlass.src,
     alt: siteImages.fibreGlass.alt,
-    applications: ['Windows and doors', 'Ventilation openings', 'Frames and enclosures'],
+    applications: ['Waterproofing reinforcement', 'Roofs and terraces', 'Walls and coating layers'],
+    lightImage: true,
   },
   {
     slug: 'shade-net',
