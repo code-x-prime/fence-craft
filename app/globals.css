@@ -401,3 +401,32 @@ html.motion [data-ph-line] {
     animation: none;
   }
 }
+
+/* Brochure dialog: soft pop-in */
+.brochure-dialog[open] {
+  animation: brochure-in 0.28s ease-out;
+}
+.brochure-dialog[open]::backdrop {
+  animation: brochure-fade 0.28s ease-out;
+}
+@keyframes brochure-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes brochure-fade {
+  from {
+    opacity: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .brochure-dialog[open],
+  .brochure-dialog[open]::backdrop {
+    animation: none;
+  }
+}

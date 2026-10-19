@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { IconMenu2, IconX } from '@tabler/icons-react'
 import { Logo } from '@/components/logo'
+import { BrochureButton } from '@/components/brochure/brochure-button'
 import { BrandButton } from '@/components/ui/brand-button'
 import { gsap, MOTION } from '@/lib/gsap'
 import { nav } from '@/lib/site'
@@ -119,7 +120,9 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="hidden justify-self-end lg:block">
+        <div className="hidden items-center gap-3 justify-self-end lg:flex">
+          <BrochureButton tone={solid ? 'on-light' : 'on-dark'} iconOnly className="xl:hidden" />
+          <BrochureButton tone={solid ? 'on-light' : 'on-dark'} className="max-xl:hidden" />
           <BrandButton href="/contact" variant="primary" className="!min-h-11 !px-5">
             Get a Quote
           </BrandButton>
@@ -170,7 +173,8 @@ export function Header() {
           </Link>
         ))}
       </nav>
-      <div data-m>
+      <div data-m className="space-y-3">
+        <BrochureButton tone="on-dark" className="w-full !min-h-12" />
         <BrandButton href="/contact" className="w-full">
           Get a Quote
         </BrandButton>

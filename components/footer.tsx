@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { BrochureButton } from '@/components/brochure/brochure-button'
 import { Logo } from '@/components/logo'
 import { categories } from '@/lib/products'
 import { nav, site } from '@/lib/site'
@@ -16,6 +17,7 @@ export function Footer() {
             <Logo onDark className="h-24" />
           </Link>
           <p className="mt-5 text-[11px] font-bold uppercase tracking-[0.2em] text-teal-soft">{site.tagline}</p>
+          <BrochureButton tone="on-dark" className="mt-6" />
         </div>
 
         <nav aria-label="Footer" className="md:col-span-2">

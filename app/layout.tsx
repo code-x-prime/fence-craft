@@ -2,6 +2,7 @@ import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import localFont from 'next/font/local'
 import { CursorFollower } from '@/components/animations/CursorFollower'
+import { BrochureProvider } from '@/components/brochure/brochure-provider'
 import { Footer } from '@/components/footer'
 import { Header } from '@/components/header'
 import { MobileActionBar } from '@/components/mobile-action-bar'
@@ -89,11 +90,13 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organization).replace(/</g, '\\u003c') }}
         />
-        <Header />
-        {children}
-        <Footer />
-        <MobileActionBar />
-        <CursorFollower />
+        <BrochureProvider>
+          <Header />
+          {children}
+          <Footer />
+          <MobileActionBar />
+          <CursorFollower />
+        </BrochureProvider>
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>

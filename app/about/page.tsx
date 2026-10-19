@@ -135,6 +135,39 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* proprietor's message */}
+      <section className="section-y bg-paper-2">
+        <div className="wrap grid gap-8 lg:grid-cols-12 lg:gap-14">
+          <div className="lg:col-span-5">
+            <FadeIn>
+              <p className="eyebrow text-teal">Proprietor&apos;s message</p>
+            </FadeIn>
+            <RevealText
+              as="h2"
+              lines={['A commitment to', 'quality, trust &', 'excellence.']}
+              className="display mt-4 h-statement leading-[0.95] text-slate"
+            />
+          </div>
+          <FadeIn group className="space-y-5 text-base leading-relaxed text-ink/80 md:text-lg lg:col-span-7">
+            <p>At FENCECRAFT, we believe that every strong relationship begins with trust, every successful partnership is built on commitment, and every great achievement starts with a vision.</p>
+            <p>Our vision is to deliver dependable fencing and wire mesh solutions that stand for quality, durability, and value. We are committed to understanding our customers&apos; needs and providing products that meet their expectations through consistent quality, honest business practices, and reliable service.</p>
+            <p>We see our customers not merely as business associates, but as long-term partners in our journey of growth. Their trust inspires us to improve continuously, explore new opportunities, and raise our standards with every step forward.</p>
+            <p>As we look towards the future, our goal is to establish FENCECRAFT as a trusted name in the fencing industry, recognised for its commitment to quality, customer satisfaction, and lasting business relationships. We aspire to grow together with our customers and partners while upholding the values of integrity, reliability, and excellence that define our business.</p>
+            <p>I sincerely thank all our customers, partners, and well-wishers for their continued trust and support. Your confidence motivates us to move forward with greater dedication and a stronger commitment to serving you.</p>
+            <p>Together, we aim to build lasting relationships, deliver lasting value, and create a stronger future.</p>
+            <p className="pt-2 font-semibold text-slate">
+              Warm Regards,
+              <br />
+              <span className="font-extrabold">PARVEEN JAIN</span>
+              <br />
+              Proprietor, FENCECRAFT
+              <br />
+              A Brand by S.B. ENTERPRISES
+            </p>
+          </FadeIn>
+        </div>
+      </section>
+
       {/* 4 — vision / mission */}
       <VisionMission />
 

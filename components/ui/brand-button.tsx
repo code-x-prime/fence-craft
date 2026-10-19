@@ -20,6 +20,7 @@ type Props = {
   className?: string
   type?: 'button' | 'submit'
   onClick?: MouseEventHandler<HTMLElement>
+  disabled?: boolean
 }
 
 /**
@@ -35,6 +36,7 @@ export function BrandButton({
   className = '',
   type = 'button',
   onClick,
+  disabled,
 }: Props) {
   const cls = `group inline-flex min-h-12 items-center justify-center gap-3 rounded-xl border px-5 text-center text-[12px] sm:px-6 font-bold uppercase tracking-[0.12em] transition-[background-color,color,border-color,transform] duration-300 hover:-translate-y-0.5 active:translate-y-0 ${variants[variant]} ${className}`
   const Icon = icon === 'up-right' ? IconArrowUpRight : IconArrowRight
@@ -48,7 +50,7 @@ export function BrandButton({
 
   if (!href) {
     return (
-      <button type={type} onClick={onClick} className={cls}>
+      <button type={type} onClick={onClick} disabled={disabled} className={`${cls} disabled:pointer-events-none disabled:opacity-60`}>
         {inner}
       </button>
     )

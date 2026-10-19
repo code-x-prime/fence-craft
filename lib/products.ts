@@ -141,6 +141,21 @@ export const products: Product[] = [
     ],
   },
   {
+    slug: '3d-v-curve-welded-mesh-fence',
+    name: '3D V-Curve Welded Wire Mesh Fence (V-Bend Security Jali)',
+    category: 'galvanized-iron',
+    description:
+      'Durable welded wire mesh fencing with V-bends for enhanced strength and security. Its powder-coated finish provides corrosion resistance and long-lasting performance, making it ideal for boundary fencing, industrial premises, commercial spaces and residential properties.',
+    image: siteImages.vCurve.src,
+    alt: siteImages.vCurve.alt,
+    applications: [
+      'Boundary fencing',
+      'Industrial premises',
+      'Commercial spaces',
+      'Residential properties',
+    ],
+  },
+  {
     slug: 'mosquito-wire-mesh',
     name: 'Mosquito Wire Mesh',
     category: 'galvanized-iron',
@@ -224,6 +239,16 @@ export const products: Product[] = [
     alt: siteImages.diamondBarfi.alt,
     applications: ['Screens and grilles', 'Ventilation panels', 'Light enclosures'],
   },
+  {
+    slug: 'aluminium-capsule-wire-mesh',
+    name: 'Aluminium Capsule Wire Mesh',
+    category: 'aluminium',
+    description:
+      'Aluminium Capsule Wire Mesh is a lightweight, corrosion-resistant mesh featuring distinctive capsule-shaped openings. Its durable construction and neat metallic finish make it suitable for architectural applications, partitions, screening and filtration.',
+    image: siteImages.aluminiumCapsule.src,
+    alt: siteImages.aluminiumCapsule.alt,
+    applications: ['Architectural applications', 'Partitions', 'Screening', 'Filtration'],
+  },
   // ---- PVC / plastic ------------------------------------------------------
   {
     slug: 'pvc-garden-mesh',
@@ -239,15 +264,6 @@ export const products: Product[] = [
       'Small animal and poultry enclosures',
       'Boundary marking',
     ],
-  },
-  {
-    slug: 'pvc-wire-mesh',
-    name: 'PVC Wire Mesh',
-    category: 'pvc-plastic-mesh',
-    description: 'Wire mesh with a PVC outer coating for garden fences, parks and general enclosures. Discuss the required mesh pattern, opening and wire size to match the boundary you are planning.',
-    image: siteImages.pvcWire.src,
-    alt: siteImages.pvcWire.alt,
-    applications: ['Fencing and enclosures', 'Garden and park boundaries', 'General outdoor applications'],
   },
   {
     slug: 'mosquito-net',
