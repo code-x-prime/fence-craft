@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { AboutSection } from '@/components/about-section'
 import { ApplicationsSection } from '@/components/applications-section'
 import { ContactSection } from '@/components/contact-section'
+import { HomeVideo } from '@/components/home-video'
 import { Hero } from '@/components/hero'
 import { ProductShowcase } from '@/components/product-showcase'
 import { CTASection } from '@/components/sections/CTASection'
@@ -24,6 +25,7 @@ export default function Home() {
       <AboutSection />
       <ProductShowcase />
       <ApplicationsSection />
+      <HomeVideo />
       <WhyFencecraft />
       <VisionMission />
       <CTASection />

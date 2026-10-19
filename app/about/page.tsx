@@ -11,6 +11,7 @@ import { BrandButton } from '@/components/ui/brand-button'
 import { CTASection } from '@/components/sections/CTASection'
 import { PageHero } from '@/components/sections/PageHero'
 import { SectionHeading } from '@/components/sections/SectionHeading'
+import { WorkshopVideo } from '@/components/sections/WorkshopVideo'
 import { SplitContent } from '@/components/sections/SplitContent'
 import { categories, productsInCategory } from '@/lib/products'
 import { siteImages } from '@/lib/site-images'
@@ -134,6 +135,8 @@ export default function AboutPage() {
           </ol>
         </div>
       </section>
+
+      <WorkshopVideo />
 
       {/* proprietor's message */}
       <section className="section-y bg-paper-2">
